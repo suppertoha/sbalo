@@ -1,0 +1,146 @@
+.inputMain {
+  transition: 300ms;
+  padding: 20px;
+  border: 1px solid #D8D8D8;
+  border-radius: 5px;
+
+  &:hover{
+    border: 1px solid  #005BFF;
+  }
+}
+
+.btnMain {
+  transition: 300ms;
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  font: normal normal normal 16px/19px Roboto;
+  letter-spacing: 0px;
+}
+
+.btn-blue {
+  background: #005BFF ;
+  color: #FFFFFF;
+
+  &:hover{
+    background: #0050E0;
+  }
+}
+
+.block-input{
+  margin-right: 6px;
+}
+
+.icon{
+  height: inherit;
+}
+
+.checkbox{
+  font-size: 16px;
+  padding: 0 0 0 55px;
+  position: relative;
+  cursor: pointer;
+  transition: 300ms;
+
+  transition: all 0.3s ease 0s;
+  input{
+    display: none;
+  }
+
+  &:hover{
+    &:before{
+      border: 2px solid #005BFF;
+    }
+  }
+
+  position: relative;
+  &:before{
+  content: '' ; 
+    display: inline-block;
+    transition: 300ms;
+    width: 41px;
+    height: 18px;
+    position: absolute;
+    background-color: #FFFFFF;
+    left: 0px;
+    top: 0px;
+    border: 2px solid #8B99A1;
+    border-radius: 22px;
+  }
+
+  position: relative;
+  &:after{
+  content: '' ; 
+  display: inline-block;
+  transition: 300ms;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  background-color:#8B99A1;
+  border-radius: 50%;
+  left: 3px;
+  top: 3px;
+  }
+
+  &.active{
+    position: relative;
+    &:before{
+      background-color: #005BFF;
+      border: 2px solid transparent;
+    }
+  }
+
+  &.active{
+    position: relative;
+    &:before{
+      background-color: #005BFF;
+      border: 2px solid transparent;
+    }
+  }
+
+  &.active{
+    position: relative;
+    &:after{
+      background-color: #ffffff;
+      left: 27px;
+    }
+  }
+}
+
+.hint {
+  position: relative;
+
+
+  &__content {
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 0;
+    font-size: 15px;
+    width: 320px;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #8B99A1;
+    border-radius: 19px;
+    transition: 300ms;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &__title {
+  }
+
+  &__text {
+  }
+
+  &__button{
+    &:hover{
+      color: red;
+      ~.hint__content{
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
+

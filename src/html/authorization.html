@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./libs/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/main.css">
+		<title>Sbalo</title>
+
+
+	</head>
+
+	<body>
+    <div class="wrapper">
+      <!-- Authorization -->
+      <div class="authorization">
+        <div class="authorization__container container">
+          <div class="authorization__header">
+            <div class="authorization__menu">
+              <a href="#" class="authorization__logo">
+                <img src="images/logo.png" alt="">
+              </a>
+  
+              <ul class="authorization__list">
+                <li class="authorization__link">
+                  <a href="#">1 Авторизация</a>
+                </li>
+    
+                <li class="authorization__link">
+                  <a href="#">2 Доставка</a>
+                </li>
+    
+                <li class="authorization__link">
+                  <a href="#">3 Оплата</a>
+                </li>
+
+              </ul>
+  
+              <div class="authorization__button">
+                <svg class="icon">
+                  <use xlink:href="../images/svg-sprite.svg#close"></use>
+                </svg>
+              </div>
+            </div>        
+          </div>
+          
+          <div class="authorization__main">
+            <form action="#" class="authorization__form form-autorization">
+              <div class="form-autorization__inner">
+                <h2 class="form-autorization__title">Sbalo ID</h2>
+                <div class="form-autorization__description">Ввести номер телефона</div>
+                <div class="form-autorization__info">
+                  Мы отправим код или позвоним. Отвечать <br> на звонок не нужно. Код может прийти на почту или в СМС
+                </div>
+                <div class="form-autorization__input">
+                  <input class="inputMain" type="tel" placeholder="Телефон*">
+                </div>
+
+                <div class="form-autorization__button">
+                  <a href="#" class="btnMain btn-blue">
+                    Войти
+                  </a>
+                </div>
+
+                <div class="form-autorization__mail">
+                  <a href="#">Войти по почте</a> 
+                </div>
+                
+              </div>
+            </form>
+          </div>
+        </div>
+      
+      </div>
+      <!--End Authorization -->
+
+    </div>
+
+		
+
+    <script src="./libs/jquery/jquery-3.2.1.min.js"></script>
+    <script src="./libs/fancybox/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,14 @@
+//! Container
+/*Container*/
+
+.container {
+  padding: 0 10px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1500px) {
+  .container {
+    width: 100%;
+  }
+}
