@@ -1,115 +1,194 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="viewport" content="width=device-width" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
     <!--<link rel="stylesheet" href="./libs/fancybox/jquery.fancybox.min.css">-->
-    <link rel="stylesheet" href="css/main.css">
-		<title>Ordering</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Ordering</title>
+  </head>
 
-
-	</head>
-
-	<body>
+  <body>
     <!-- Ordering -->
     <div class="ordering">
       <div class="ordering__container container">
         <div class="ordering__inner">
           <div class="ordering__cart">
-            <!--<div class="radioButton">
-              <input type="radio">
-              <div class="radioButton__item">
-
-              </div>
-              input:checked + .radioButton__item
-            </div>-->
             <div class="cart">
               <div class="cart__inner">
-                <div class="cart__title">
-                  Оплата
-                </div>
-  
+                <div class="cart__title">Оплата</div>
+
                 <div class="cart__payment payment">
                   <div class="payment__items">
-                    <div class="payment__item active">
-                      SberPay
-                    </div>
-  
+                    <div class="payment__item active">SberPay</div>
+
                     <div class="payment__item">
-                      Банковской <br> картой
+                      Банковской <br />
+                      картой
                     </div>
-  
+
                     <div class="payment__item">
-                      Рассрочка <br> Сбербанк
+                      Рассрочка <br />
+                      Сбербанк
                     </div>
                   </div>
-  
+
                   <div class="payment__checkbox checkbox-block">
                     <div class="block-input">
                       <div class="checkbox">
                         Оплата при получении
-                        <input type="checkbox" checked name="checkbox1">
+                        <input type="checkbox" checked name="checkbox1" />
                       </div>
                     </div>
-  
+
                     <div class="checkbox-block__hint hint">
-                      <div class="hint__button">
-                        ?
-                      </div>
+                      <div class="hint__button">?</div>
                       <div class="hint__content">
-                        <div class="hint__title">
-                          Как работает оплата после получения
-                        </div>
+                        <div class="hint__title">Как работает оплата после получения</div>
                         <div class="hint__text">
                           <p>
-                            Оплата автоматически спишется с указанной вами карты только за выкупленные товары. За доставку и возврат товаров, которые не подошли, платить не придется.
+                            Оплата автоматически спишется с указанной вами карты только за
+                            выкупленные товары. За доставку и возврат товаров, которые не подошли,
+                            платить не придется.
                           </p>
-                          <p>
-                            Опция бесплатная и доступна для заказов на сумму до 100 000 ₽.
-                          </p>
+                          <p>Опция бесплатная и доступна для заказов на сумму до 100 000 ₽.</p>
                         </div>
                       </div>
                     </div>
                   </div>
-  
                 </div>
-  
-  
               </div>
             </div>
 
             <div class="cart">
               <div class="cart__inner">
-                <div class="cart__title">
-                  Можно забрать с 9 декабря с 17:00
-                </div>
-  
-                <div class="cart__subtitle">
-                  Склад Сбало (Московская обл.) • 2 товара • 2, 5 кг
-                </div>
-  
+                <div class="cart__title">Доставка</div>
 
-  
+                <div class="cart__delivery delivery">
+                  <div class="delivery__radio">
+                    <label class="radio mr">
+                      <input type="radio" name="toggle" class="radio__input" />
+                      <span></span>
+                      <div class="radio__name">Самовывоз</div>
+                    </label>
+
+                    <label class="radio">
+                      <input type="radio" name="toggle" class="radio__input" />
+                      <span></span>
+                      <div class="radio__name">Курьером</div>
+                    </label>
+                  </div>
+
+                  <div class="delivery__description">
+                    <div class="description-delivery bb">
+                      <h3 class="description-delivery__title">Курьером по адресу</h3>
+                      <div class="description-delivery__info">
+                        <img src="images/icon-location.svg" alt="location" />
+                        Россия, Московская обл., г. Москва, просп. Ленина, д. 109, квартира 50
+                      </div>
+                      <div class="description-delivery__warning">Срок хранения - 5 дней</div>
+                      <div class="description-delivery__button">Изменить</div>
+                    </div>
+
+                    <div class="description-delivery">
+                      <h3 class="description-delivery__title">Получатель</h3>
+                      <div class="description-delivery__info">
+                        <img src="images/icon-person.svg" alt="person" />
+                        Анна Иванова, +7 (900) 900-90-90
+                      </div>
+                      <div class="description-delivery__button">Изменить</div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          
-          </div>
-          <div class="ordering__check">
 
+            <div class="cart">
+              <div class="cart__inner">
+                <div class="cart__title">Можно забрать с 9 декабря с 17:00</div>
+
+                <div class="cart__subtitle">Склад Сбало (Московская обл.) • 2 товара • 2, 5 кг</div>
+
+                <div class="cart__brand brand">
+                  <div class="brand__items">
+                    <div class="brand__item">
+                      <div class="brand__image">
+                        <img src="images/brand-img1.jpg" alt="brand" />
+                      </div>
+                      <div class="brand__sum">6 599 RUB</div>
+                    </div>
+
+                    <div class="brand__item">
+                      <div class="brand__image">
+                        <img src="images/brand-img2.jpg" alt="brand" />
+                      </div>
+                      <div class="brand__sum">2 299 RUB</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ordering__check check">
+            <div class="check__inner">
+              <button class="check__button">
+                <a href="#" class="btmMain">Оплатить онлайн</a>
+              </button>
+              <div class="check__info">
+                Доступные способы и время доставки можно выбрать при оформлении заказа
+              </div>
+              <div class="check__body">
+                <div class="check__order">Ваш заказ</div>
+                <span>2 товара • 2,5 кг</span>
+                <ul class="check__item item-check">
+                  <li class="item-check__body">
+                    <div class="item-check__name">Товары (2)</div>
+                    <span></span>
+                    <div class="item-check__sum">8 893 RUB</div>
+                  </li>
+
+                  <li class="item-check__body">
+                    <div class="item-check__name">Скидка</div>
+                    <span></span>
+                    <div class="item-check__sum">500 RUB</div>
+                  </li>
+
+                  <li class="item-check__body">
+                    <div class="item-check__name">Доставка</div>
+                    <span></span>
+                    <div class="item-check__sum highlighted">Бесплатно</div>
+                  </li>
+                  
+                </ul>
+              </div>
+
+              <div class="check__total total-check">
+                <div class="total-check__inner">
+                  <div class="total-check__name">Итого</div>
+                  <div class="total-check__sum">8 893 RUB</div>
+                </div>
+              </div>
+
+              <div class="check__promo">
+                Промокод или сертификат
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    
     </div>
 
-        <!--End Ordering -->
-		
+    <!--End Ordering -->
 
     <script src="./libs/jquery/jquery-3.2.1.min.js"></script>
     <!--<script src="./libs/fancybox/jquery.fancybox.min.js"></script>-->
     <script src="js/main.js"></script>
-	</body>
+  </body>
 </html>

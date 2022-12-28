@@ -17,20 +17,7 @@
 }
 .container {
 }
-.cart {
-  padding: 40px;
-  background: #FFFFFF;
-  &__inner {
-  }
 
-  &__title {
-    font-size: 30px;
-    margin-bottom: 27px;
-  }
-
-  &__payment {
-  }
-}
 .payment {
 
   &__items {
@@ -48,9 +35,14 @@
     width: 178px;
     height: 112px;
     border: 2px solid #CFD0D2;
+    transition: 300ms;
     border-radius: 5px;
     text-align: center;
     font-size: 16px;
+
+    &:hover{
+      border: 2px solid #005BFF;
+    }
 
     &:last-child{
       margin-right: 0;
@@ -80,6 +72,7 @@
 .hint {
 
   &__content {
+    
   }
 
   &__title {
@@ -112,6 +105,8 @@
 
     &:hover{
       background: #8B99A1 ;
+      border: 1px solid #8B99A1;
+
       color: #ffffff;
     }
   }
