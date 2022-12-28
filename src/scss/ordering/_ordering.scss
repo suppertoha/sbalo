@@ -4,15 +4,43 @@
   }
 
   &__inner {
+    display: flex;
+    align-items: flex-start;
+
+    @media screen and (max-width: 991px) {
+      flex-direction: column;
+    }
   }
 
   &__cart {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    margin-right: 50px;
+    overflow: hidden;
+
+    .cart{
+      &:not(:first-child){
+        margin-top: 20px;
+      }
+    }
+
+    @media screen and (max-width: 1100px) {
+      margin-right: 30px;
+    }
+
+    @media screen and (max-width: 991px) {
+      margin-right: 0px;
+      margin-bottom: 20px;
+    }
   }
 
   &__check {
+    max-width: 346px;
+    flex-shrink: 0;
+
+    @media screen and (max-width: 991px) {
+      width: 100%;
+      max-width: 100%;
+    }
   }
 }
 .container {
@@ -24,11 +52,15 @@
     display: flex;
     align-items: center;
     margin-bottom: 40px;
+    overflow: scroll;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
   }
 
   &__item {
     cursor: pointer;
-    margin-right: 11px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,13 +71,19 @@
     border-radius: 5px;
     text-align: center;
     font-size: 16px;
+    flex-shrink: 0;
 
     &:hover{
       border: 2px solid #005BFF;
     }
 
-    &:last-child{
-      margin-right: 0;
+    &:not(:first-child){
+      margin-left: 11px;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 127px;
+      height: 80px;
     }
 
     &.active{
@@ -58,6 +96,11 @@
   &__checkbox {
     display: flex;
     align-items: center;
+
+    
+    @media screen and (max-width: 767px) {
+      padding-right: 20px;
+    }
   }
 }
 .checkbox-block {
