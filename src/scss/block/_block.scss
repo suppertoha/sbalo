@@ -337,6 +337,7 @@
 //! description-delivery
 /*description-delivery*/
 .description-delivery {
+  padding-bottom: 20px;
 
   @media screen and (max-width: 767px) {
     padding-right: 10px;
@@ -375,7 +376,12 @@
     img{
       margin-right: 10px;
     }
-  }
+
+    svg{
+      width: 40px;
+      height: 40px;
+      fill: red;
+    }
 
   &__warning {
     color: #8B99A1;
@@ -391,6 +397,19 @@
     border-bottom: 1px solid;
     transition: 300ms;
     margin-bottom: 20px;
+
+    &:hover{
+      border-bottom: 1px solid transparent;
+    }
+  }
+  }
+
+  &__button{
+    transition: 300ms;
+    display: inline-block;
+    font-size: 16px;
+    border-bottom: 1px solid #005BFF;
+    color: #005BFF;
 
     &:hover{
       border-bottom: 1px solid transparent;
