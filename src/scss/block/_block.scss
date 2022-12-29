@@ -8,6 +8,10 @@
   &:hover{
     border: 1px solid  #005BFF;
   }
+
+  &::placeholder{
+    color: #8B99A1;
+  }
 }
 
 .btnMain {
@@ -18,6 +22,7 @@
   justify-content: center;
   font: normal normal normal 16px/19px Roboto;
   letter-spacing: 0px;
+  cursor: pointer;
 }
 
 .btn-blue {
@@ -29,6 +34,18 @@
   }
 }
 
+.btn-light-blue{
+  color: #000000;
+  background: #F2F5FA;
+  &:hover{
+    background: #CFD0D2;
+  }
+}
+
+.btn-black{
+  background:#000000;
+  color: #ffffff;
+}
 .btn-green {
   background: #10C44C  ;
   color: #FFFFFF;
@@ -44,6 +61,20 @@
 
 .icon{
   height: inherit;
+  stroke: #8B99A1;
+}
+
+
+.btn-hover{
+  transition: 300ms;
+  display: inline-block;
+  font-size: 16px;
+  border-bottom: 1px solid #005BFF;
+  color: #005BFF;
+
+  &:hover{
+    border-bottom: 1px solid transparent;
+  }
 }
 
 //! checkbox
@@ -248,6 +279,7 @@
       height: 100%;
       opacity: 0;
       transition: 300ms;
+      background: url(../images/ok.svg) 60%/60% no-repeat;
     }
 
     @media screen and (max-width: 767px) {
@@ -402,18 +434,6 @@
       border-bottom: 1px solid transparent;
     }
   }
-  }
-
-  &__button{
-    transition: 300ms;
-    display: inline-block;
-    font-size: 16px;
-    border-bottom: 1px solid #005BFF;
-    color: #005BFF;
-
-    &:hover{
-      border-bottom: 1px solid transparent;
-    }
   }
 
   &__warning{

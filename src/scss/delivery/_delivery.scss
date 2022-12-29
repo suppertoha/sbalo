@@ -1,0 +1,174 @@
+.map-delivery {
+  background: #ffffff;
+  height: 100%;
+
+  &__container {
+    padding: 0;
+    height: inherit;
+  }
+
+  &__inner {
+    height: inherit;
+  }
+
+  &__header {
+  }
+
+  &__body {
+    display: flex;
+    padding-top: 91px;
+    height: inherit;
+  }
+
+  &__form {
+  }
+
+  &__map {
+    width: 100%;
+  }
+}
+
+.header-map {
+  background: #ffffff;
+  padding: 15px 0;
+  border-bottom: 1px solid #C5C5C5;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    width: 520px;
+    text-align: left;
+    padding: 0 40px;
+    img{
+      margin-right: 10px;
+    }
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+  }
+
+  &__content {
+    margin: 0 33px 0 56px;
+  }
+
+  &__name {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  &__goods {
+    color: #8B99A1;
+    font-size: 16px;
+  }
+
+  &__images {
+    display: flex;
+  
+    span{
+      display: flex;
+      align-items: flex-start;
+      width: 60px;
+      height: 60px;
+
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      &:not(:first-child){
+        margin-left: 10px;
+      }
+    }
+  }
+}
+.form-map {
+  width: 520px;
+  padding: 40px 40px 0;
+  flex-shrink: 0;
+
+  &__inner {
+  }
+
+  &__title {
+    margin-bottom: 25px;
+  }
+
+  &__buttons {
+    display: flex;
+    margin-bottom: 60px;
+  }
+
+  &__button {
+    height: 50px;
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #8B99A1;
+  }
+
+  &__input {
+  }
+
+  &__location {
+  }
+}
+.Mainbtn {
+}
+.input-map {
+
+  &__address {
+    margin-bottom: 40px;
+  }
+
+  &__item {
+  }
+}
+
+#map {
+  width: 100%; height: 100%; padding: 0; margin: 0;
+}
+
+.delivery-address {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+}
+.delivery-address__field--address,
+.delivery-address__field--comment {
+  grid-column: 1/-1;
+}
+.delivery-address__field--apartment,
+.delivery-address__field--index {
+  grid-column: span 3;
+}
+.delivery-address__field--entrance,
+.delivery-address__field--floor,
+.delivery-address__field--intercom {
+  grid-column: span 2;
+}
+.delivery-address__input {
+  width: 100%;
+  height: 50px;
+}

@@ -1,6 +1,114 @@
 <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.061 29.061" id="close">
   <g id="close" transform="translate(0.53 0.53)">
-    <line id="Линия_23" x1="28" y1="28"  stroke-width="1.5"></line>
-    <line id="Линия_24" y1="28" x2="28"  stroke-width="1.5"></line>
+    <line id="Линия_23" x1="28" y1="28" stroke-width="1.5"></line>
+    <line id="Линия_24" y1="28" x2="28" stroke-width="1.5"></line>
   </g>
+</symbol>
+
+<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.964 18" id="main-delivery">
+  <g id="delivery" transform="translate(0 -78.521)">
+    <g id="Сгруппировать_489" transform="translate(16.336 89.976)">
+      <g id="Сгруппировать_488">
+        <path id="Контур_6"
+          d="M325.424,304.4a3.273,3.273,0,1,0,3.273,3.273A3.276,3.276,0,0,0,325.424,304.4Zm0,4.909a1.636,1.636,0,1,1,1.636-1.636A1.638,1.638,0,0,1,325.424,309.312Z"
+          transform="translate(-322.151 -304.403)"></path>
+      </g>
+    </g>
+    <g id="Сгруппировать_491" transform="translate(5.155 89.976)">
+      <g id="Сгруппировать_490">
+        <path id="Контур_7"
+          d="M104.92,304.4a3.273,3.273,0,1,0,3.273,3.273A3.276,3.276,0,0,0,104.92,304.4Zm0,4.909a1.636,1.636,0,1,1,1.636-1.636A1.638,1.638,0,0,1,104.92,309.312Z"
+          transform="translate(-101.647 -304.403)"></path>
+      </g>
+    </g>
+    <g id="Сгруппировать_493" transform="translate(16.773 80.157)">
+      <g id="Сгруппировать_492">
+        <path id="Контур_8" d="M335.8,111.241a.819.819,0,0,0-.731-.451h-4.309v1.636h3.8l2.228,4.431,1.462-.735Z"
+          transform="translate(-330.756 -110.79)"></path>
+      </g>
+    </g>
+    <g id="Сгруппировать_495" transform="translate(10.964 92.457)">
+      <g id="Сгруппировать_494">
+        <rect id="Прямоугольник_976" width="6.191" height="1.636"></rect>
+      </g>
+    </g>
+    <g id="Сгруппировать_497" transform="translate(2.318 92.457)">
+      <g id="Сгруппировать_496">
+        <path id="Контур_9" d="M49.369,353.345H46.533a.818.818,0,1,0,0,1.636H49.37a.818.818,0,1,0,0-1.636Z"
+          transform="translate(-45.715 -353.345)"></path>
+      </g>
+    </g>
+    <g id="Сгруппировать_499" transform="translate(2.318 78.521)">
+      <g id="Сгруппировать_498">
+        <path id="Контур_10"
+          d="M69.189,87.456l-1.609-2.073a.817.817,0,0,0-.646-.316H60.988V79.339a.818.818,0,0,0-.818-.818H46.533a.818.818,0,1,0,0,1.636H59.351v5.727a.818.818,0,0,0,.818.818h6.363l1.192,1.535v4.22H65.46a.818.818,0,0,0,0,1.636h3.082a.818.818,0,0,0,.818-.818V87.957A.819.819,0,0,0,69.189,87.456Z"
+          transform="translate(-45.715 -78.521)"></path>
+      </g>
+    </g>
+    <g id="Сгруппировать_501" transform="translate(1.336 88.312)">
+      <g id="Сгруппировать_500">
+        <path id="Контур_11" d="M30.935,271.6H27.171a.818.818,0,0,0,0,1.636h3.764a.818.818,0,0,0,0-1.636Z"
+          transform="translate(-26.353 -271.597)"></path>
+      </g>
+    </g>
+    <g id="Сгруппировать_503" transform="translate(0 85.094)">
+      <g id="Сгруппировать_502">
+        <path id="Контур_12" d="M7.8,208.134H.818a.818.818,0,0,0,0,1.636H7.8a.818.818,0,0,0,0-1.636Z"
+          transform="translate(0 -208.134)"></path>
+      </g>
+    </g>
+    <g id="Сгруппировать_505" transform="translate(1.336 81.876)">
+      <g id="Сгруппировать_504">
+        <path id="Контур_13" d="M34.153,144.672H27.171a.818.818,0,0,0,0,1.636h6.982a.818.818,0,0,0,0-1.636Z"
+          transform="translate(-26.353 -144.672)"></path>
+      </g>
+    </g>
+  </g>
+</symbol>
+<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.05 31.5">
+  <path id="main-location-on"
+    d="M18.525,3A11.017,11.017,0,0,0,7.5,14.025C7.5,22.294,18.525,34.5,18.525,34.5S29.55,22.294,29.55,14.025A11.017,11.017,0,0,0,18.525,3Zm0,14.963a3.938,3.938,0,1,1,3.938-3.937A3.939,3.939,0,0,1,18.525,17.963Z"
+    transform="translate(-7.5 -3)"></path>
+</symbol>
+<symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18.182 20"
+  id="main-geo">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="path2511" d="M0-682.665H18.182v20H0Z" transform="translate(0 682.665)"></path>
+    </clipPath>
+  </defs>
+  <g id="geo" transform="translate(0 0.998)">
+    <g id="g2505" transform="translate(0 -0.998)">
+      <g id="g2507">
+        <g id="g2509" clip-path="url(#clip-path)">
+          <path id="path2517"
+            d="M-214.14-625.549c-2.131-3.2-5.859-7.528-5.859-11.257a5.866,5.866,0,0,1,5.859-5.859,5.866,5.866,0,0,1,5.859,5.859C-208.281-633.077-212.009-628.745-214.14-625.549Z"
+            transform="translate(223.231 644.107)" fill="none" stroke="#000" stroke-linecap="round"
+            stroke-linejoin="round" stroke-width="1.7"></path>
+          <path id="path2521"
+            d="M-97.336-194.673A2.666,2.666,0,0,1-100-197.336,2.666,2.666,0,0,1-97.336-200a2.666,2.666,0,0,1,2.663,2.663A2.666,2.666,0,0,1-97.336-194.673Z"
+            transform="translate(106.427 204.637)" fill="none" stroke="#000" stroke-linecap="round"
+            stroke-linejoin="round" stroke-width="1.7"></path>
+        </g>
+      </g>
+    </g>
+  </g>
+</symbol>
+<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.285 14" id="main-next">
+  <path d="M12.716,0,7,5.716,1.284,0,0,1.284l7,7,7-7Z"></path>
+</symbol>
+<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.511 9.528" id="main-ok">
+  <path id="ok" d="M242,306.21l4.14,4.14,5.86-7.933" transform="translate(-241.293 -301.823)" fill="none" stroke="#fff"
+    stroke-linejoin="round" stroke-width="2"></path>
+</symbol>
+<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.061 29.061" id="main-close">
+  <g id="close" transform="translate(0.53 0.53)">
+    <line id="Линия_23" x1="28" y1="28" fill="none" stroke="#8b99a1" stroke-width="1.5"></line>
+    <line id="Линия_24" y1="28" x2="28" fill="none" stroke="#8b99a1" stroke-width="1.5"></line>
+  </g>
+</symbol>
+<symbol id="main-delete" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.556 20">
+  <path id="Icon_material-delete-2"
+    d="M8.611,22.278A2.229,2.229,0,0,0,10.833,24.5h8.889a2.229,2.229,0,0,0,2.222-2.222V8.944H8.611ZM23.056,5.611H19.167L18.056,4.5H12.5L11.389,5.611H7.5V7.833H23.056Z"
+    transform="translate(-7.5 -4.5)" fill="#cfd0d2"></path>
 </symbol>

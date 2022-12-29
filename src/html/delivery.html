@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./libs/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/main.css">
+		<title>Delivery</title>
+
+	</head>
+
+	<body>
+    <div class="wrapper">
+      <!-- Delivery -->
+        <div class="map-delivery">
+          <div class="container map-delivery__container">
+            <div class="map-delivery__inner">
+              <div class="map-delivery__header header-map">
+                <div class="header-map__inner">
+                  <button class="header-map__button">
+                    <img src="images/next.svg" alt="next">
+                    Назад
+                  </button>
+                  <div class="header-map__items">
+                    <div class="header-map__content">
+                      <div class="header-map__name">Доставка товаров</div>
+                      <div class="header-map__goods">1 товар - 2,5 кг</div>
+                    </div>
+                    <div class="header-map__images">
+                      <span>
+                        <img src="images/brand-img1.jpg" alt="brand" />
+                      </span>
+                      <span>
+                        <img src="images/brand-img2.jpg" alt="brand" />
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="map-delivery__body">
+                <form action="#" class="map-delivery__form form-map">
+                  <div class="form-map__inner">
+                    <h2 class="form-map__title">Способ доставки</h2>
+                    <div class="form-map__buttons">
+                      <button class="form-map__button btnMain btn-black">
+                        Самовывоз
+                      </button>
+                      <button class="form-map__button btnMain btn-light-blue">
+                        Курьером
+                      </button>
+                    </div>
+
+                    <div class="form-map__subtitle">Куда доставить заказ?</div>
+                    <div class="form-map__text">Выберите адрес доставки на карте</div>
+                    <div class="form-map__input input-map">
+                      <div class="input-map__address delivery-address">
+                        <div class="delivery-address__field delivery-address__field--address "> 
+                          <input class="inputMain" type="text" name="address" placeholder="Адрес доставки"><small class="delivery-address__error-msg"></small>
+                        </div>
+                        <!--<div class="delivery-address__field delivery-address__field--apartment"> 
+                          <input class="inputMain" type="text" name="apartment" placeholder="Квартира/офис"><small class="delivery-address__error-msg"></small>
+                        </div>
+                        <div class="delivery-address__field delivery-address__field--index"> 
+                          <input class="inputMain" type="text" name="index" placeholder="Индекс"><small class="delivery-address__error-msg"></small>
+                        </div>
+                        <div class="delivery-address__field delivery-address__field--entrance"> 
+                          <input class="inputMain" type="text" name="entrance" placeholder="Подъезд"><small class="delivery-address__error-msg"></small>
+                        </div>
+                        <div class="delivery-address__field delivery-address__field--floor"> 
+                          <input class="inputMain" type="text" name="floor" placeholder="Этаж"><small class="delivery-address__error-msg"></small>
+                        </div>
+                        <div class="delivery-address__field delivery-address__field--intercom"> 
+                          <input class="inputMain" type="text" name="intercom" placeholder="Домофон"><small class="delivery-address__error-msg"></small>
+                        </div>
+                        <div class="delivery-address__field delivery-address__field--comment">
+                          <textarea class="inputMain" type="text" name="comment" placeholder="Комментарий курьеру"></textarea><small class="delivery-address__error-msg"></small>
+                        </div>-->
+                      </div>
+                    </div>
+                    <div class="form-map__location btn-hover">Определить местоположение</div>
+                  </div>
+                </form>
+
+                <div class="map-delivery__map">
+                  <div id="map"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!--End Delivery -->
+
+    </div>
+
+		
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+    <script src="./libs/jquery/jquery-3.2.1.min.js"></script>
+    <script src="./libs/fancybox/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+	</body>
+</html>
