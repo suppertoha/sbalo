@@ -1,31 +1,23 @@
 $(document).ready(function () {
 
+  $('.js-button--delivery').on('click', function () {
+    $(this).toggleClass('active');
+    $('.js-form--delivery').toggleClass('active');
+  });
 
-  console.log('okkkkkkkk')
+  $('.close-button').on('click', function () {
+    $(this).toggleClass('active');
+    $('.js-form--delivery').removeClass('active');
+  });
 
+  $(document).on('click', function (e) {
+    if (!$(e.target).closest('.js-button--delivery, .js-form--delivery').length) {
+      $('.js-form--delivery').removeClass('active');
+      $('.js-button--delivery').removeClass('active');
+    }
+    e.stopPropagation();
+  });
 
-  //! Color svg
-
-  //$('img.img-svg').each(function () {
-  //  var $img = $(this);
-  //  var imgClass = $img.attr('class');
-  //  var imgURL = $img.attr('src');
-  //  $.get(
-  //    imgURL,
-  //    function (data) {
-  //      var $svg = $(data).find('svg');
-  //      if (typeof imgClass !== 'undefined') {
-  //        $svg = $svg.attr('class', imgClass + ' replaced-svg');
-  //      }
-  //      $svg = $svg.removeAttr('xmlns:a');
-  //      if (!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
-  //        $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'));
-  //      }
-  //      $img.replaceWith($svg);
-  //    },
-  //    'xml',
-  //  );
-  //});
 
 
   //! Checkbox

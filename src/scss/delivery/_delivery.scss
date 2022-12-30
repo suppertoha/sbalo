@@ -2,11 +2,10 @@
   background: #ffffff;
   height: 100%;
   max-width: 1920px;
-  overflow: hidden;
+  overflow-x: hidden;
   margin: 0 auto;
 
   &__container {
-
     height: inherit;
   }
 
@@ -35,6 +34,7 @@
   }
 
   &__body {
+    position: relative;
     display: flex;
     height: inherit;
     padding-top: 91px;
@@ -209,9 +209,66 @@
 }
 
 .form-map {
+  position: relative;
+  transition: 800ms;
   width: 520px;
   padding: 40px 40px 0;
   flex-shrink: 0;
+  overflow: auto;
+
+  .js-form--delivery{
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    z-index: 10;
+    position: absolute;
+    background: #ffffff;
+    left: 0;
+    top: 100%;
+    height: 0;
+
+    .icon{
+      width: 28px;
+    }
+
+    .close-button{
+      position: absolute;
+      right: 10px;
+      top: 20px;
+      z-index: 20;
+      display: none;
+  
+      @media screen and (max-width: 767px) {
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      position: fixed;
+      bottom: 0;
+    }
+
+    &.active{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      overflow: visible;
+      overflow: auto;
+      opacity: 1;
+      top: 0px;
+    }
+  }
+
+  &__inner{
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__bottom{
+    flex-grow: 10;
+  }
 
   .input-mobile{
     @media screen and (max-width: 767px) {
@@ -219,19 +276,58 @@
     }
   }
 
-  &__title {
-    margin-bottom: 25px;
+  &__button-delivery{
+    text-align: left;
+    color: #8B99A1;
+    margin-bottom: 40px;
+    transition: 300ms;
+    padding: 20px;
+    border: 1px solid #D8D8D8;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover{
+      border: 1px solid #005BFF;
+    }
 
     @media screen and (max-width: 767px) {
-      display: none;
+      margin-bottom: 10px;
+      padding: 0;
+      height: 50px;
+      background: #005BFF;
+      width: 100%;
+      text-align: center;
+      color: #ffffff;
+      span{
+        display: none;
+      }
+      &:before{
+        content: attr(data-btn); 
+      }
     }
+  }
+
+  .btn-modifier{
+    margin-bottom: 40px;
+    flex-shrink: 0;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+      //position: fixed;
+    }
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-weight: normal;
   }
   
   &__buttons {
     margin-bottom: 60px;
 
     @media screen and (max-width: 767px) {
-      &.buttons-order{
+      &.hidden{
         display: none;
       }
       
@@ -249,25 +345,18 @@
 
   &__location{
     @media screen and (max-width: 767px) {
-      margin-bottom: 10px;
-      height: 50px;
-      background: #005BFF;
-      width: 100%;
-      text-align: center;
-      color: #ffffff;
-      span{
-        display: none;
-      }
-      &:before{
-        content: attr(data-btn); 
-      }
+      display: none;
     }
   }
 
   &__text {
     margin-bottom: 20px;
     font-size: 16px;
-    color: #8B99A1;
+    max-width: 365px;
+    line-height: 1.4;
+    &.grey{
+      color: #8B99A1;
+    }
 
     @media screen and (max-width: 767px) {
       margin-bottom: 10px;
@@ -298,6 +387,10 @@
 
   &__button {
     height: 50px;
+    &.active{
+      background:#000000;
+      color: #ffffff;
+    }
   }
 }
 
@@ -319,8 +412,23 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 10px;
+
+  .inputMain{
+    padding: 16px 20px;
+  }
+
+  &__field--comment{
+    min-height: 100px;
+
+    textarea{
+      height: 100%;
+      resize: none;
+    }
+  }
 }
 .delivery-address__field--address,
+.delivery-address__field--name,
+.delivery-address__field--tel,
 .delivery-address__field--comment {
   grid-column: 1/-1;
 }

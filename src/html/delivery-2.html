@@ -27,7 +27,7 @@
                     </button>
 
                     <div class="header-map__buttons--mobile buttons-order">
-                      <button class="buttons-order__button btnMain btn-light-blue active">
+                      <button class="buttons-order__button btnMain btn-black">
                         Самовывоз
                       </button>
                       <button class="buttons-order__button btnMain btn-light-blue">
@@ -56,33 +56,10 @@
               <div class="map-delivery__body">
                 <form action="#" class="map-delivery__form form-map">
                   <div class="form-map__inner">
-                    <h2 class="form-map__title hidden">Способ доставки</h2>
-                    <div class="form-map__buttons buttons-order hidden">
-                      <button class="buttons-order__button btnMain btn-light-blue active">
-                        Самовывоз
-                      </button>
-                      <button class="buttons-order__button btnMain btn-light-blue">
-                        Курьером
-                      </button>
-                    </div>
+                    <h2 class="form-map__title">Способ доставки</h2>
 
-                    <div class="form-map__subtitle">Куда доставить заказ?</div>
-                    <div class="form-map__text grey" data-text="Выберите пункт выдачи на карте"><span>Выберите адрес доставки на карте</span></div>
-                    <button class="form-map__button-delivery js-button--delivery" data-btn="Мое местоположение">
-                      <span>Адрес доставки</span>
-                    </button>
-                    <button class="form-map__location btn-hover" >Определить местоположение</button>
-                  </div>
-
-                  <div class="form-map js-form--delivery">
-                    <h2 class="form-map__title">Адрес доставки</h2>
-                    <div class="close-button">
-                      <svg class="icon">
-                        <use xlink:href="./images/svg-sprite/svg-sprite.svg#close"></use>
-                      </svg>
-                    </div>
-                    <div class="form-map__text">Ближайшая доставка в среду, 9 декабря с 17:00, от 500 RUB</div>
-                    <div class="form-map__input input-map">
+                    <div class="form-map__text" data-text="Выберите пункт выдачи на карте"><span>Ближайшая доставка в среду, 9 декабря с 17:00, от 500 RUB</span></div>
+                    <div class="form-map__input input-map input-mobile">
                       <div class="input-map__address delivery-address">
                         <div class="delivery-address__field delivery-address__field--address"> 
                           <input class="inputMain" type="text" name="address" placeholder="Адрес доставки"><small class="delivery-address__error-msg"></small>
@@ -122,10 +99,11 @@
                         </div>
                       </div>
                     </div>
-
-                    <button class="form-map__save btnMain btn-green btn-modifier">Сохранить и продолжить</button>
+modifier
+                    <button class="form-map__location btnMain btn-green btn-save">Сохранить и продолжить</button>
                   </div>
                 </form>
+
                 <div class="map-delivery__map">
                   <div id="map"></div>
                 </div>

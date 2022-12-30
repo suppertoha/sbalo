@@ -42,6 +42,17 @@
   }
 }
 
+.hidden{
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.close-button{
+  width: 28px;
+  height: 28px;
+}
+
 .btn-black{
   background:#000000;
   color: #ffffff;
@@ -73,6 +84,7 @@
   color: #005BFF;
   width: auto;
   cursor: pointer;
+  align-self: flex-start;
   &:hover{
     border-bottom: 1px solid transparent;
   }
@@ -339,10 +351,12 @@
   }
 
   &__payment {
-    margin-bottom: 56px;
+    padding-bottom: 56px;
+    //overflow-y: hidden;
 
     @media screen and (max-width: 767px) {
-      margin-bottom: 20px;
+      padding-bottom: 20px;
+      position: relative;
     }
   }
 
@@ -609,6 +623,10 @@
 //! payment
 /*payment*/
 .payment {
+
+  &__hidden{
+    overflow: hidden;
+  }
 
   &__items {
     display: flex;
