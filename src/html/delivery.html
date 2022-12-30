@@ -16,27 +16,39 @@
     <div class="wrapper">
       <!-- Delivery -->
         <div class="map-delivery">
-          <div class="container map-delivery__container">
+          <div class="map-delivery__container">
             <div class="map-delivery__inner">
               <div class="map-delivery__header header-map">
                 <div class="header-map__inner">
-                  <button class="header-map__button">
-                    <img src="images/next.svg" alt="next">
-                    Назад
-                  </button>
+                  <div class="header-map__button--container">
+                    <button class="header-map__button">
+                      <img src="images/next.svg" alt="next">
+                      <span>Назад</span>
+                    </button>
+
+                    <div class="header-map__buttons--mobile buttons-order">
+                      <button class="buttons-order__button btnMain btn-black">
+                        Самовывоз
+                      </button>
+                      <button class="buttons-order__button btnMain btn-light-blue">
+                        Курьером
+                      </button>
+                    </div>
+
+                  </div>
                   <div class="header-map__items">
                     <div class="header-map__content">
                       <div class="header-map__name">Доставка товаров</div>
                       <div class="header-map__goods">1 товар - 2,5 кг</div>
                     </div>
-                    <div class="header-map__images">
-                      <span>
+                    <ul class="header-map__product">
+                      <li>
                         <img src="images/brand-img1.jpg" alt="brand" />
-                      </span>
-                      <span>
+                      </li>
+                      <li>
                         <img src="images/brand-img2.jpg" alt="brand" />
-                      </span>
-                    </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -45,20 +57,20 @@
                 <form action="#" class="map-delivery__form form-map">
                   <div class="form-map__inner">
                     <h2 class="form-map__title">Способ доставки</h2>
-                    <div class="form-map__buttons">
-                      <button class="form-map__button btnMain btn-black">
+                    <div class="form-map__buttons buttons-order">
+                      <button class="buttons-order__button btnMain btn-black">
                         Самовывоз
                       </button>
-                      <button class="form-map__button btnMain btn-light-blue">
+                      <button class="buttons-order__button btnMain btn-light-blue">
                         Курьером
                       </button>
                     </div>
 
                     <div class="form-map__subtitle">Куда доставить заказ?</div>
-                    <div class="form-map__text">Выберите адрес доставки на карте</div>
-                    <div class="form-map__input input-map">
+                    <div class="form-map__text" data-text="Выберите пункт выдачи на карте"><span>Выберите адрес доставки на карте</span></div>
+                    <div class="form-map__input input-map input-mobile">
                       <div class="input-map__address delivery-address">
-                        <div class="delivery-address__field delivery-address__field--address "> 
+                        <div class="delivery-address__field delivery-address__field--address"> 
                           <input class="inputMain" type="text" name="address" placeholder="Адрес доставки"><small class="delivery-address__error-msg"></small>
                         </div>
                         <!--<div class="delivery-address__field delivery-address__field--apartment"> 
@@ -81,7 +93,7 @@
                         </div>-->
                       </div>
                     </div>
-                    <div class="form-map__location btn-hover">Определить местоположение</div>
+                    <button class="form-map__location btn-hover" data-btn="Мое местоположение"><span>Определить местоположение</span></button>
                   </div>
                 </form>
 
