@@ -7,6 +7,10 @@
 .authorization {
   height: 100%;
 
+  &__main{
+    overflow: auto;
+  }
+
   &__container {
     position: relative;
     height: 100%;
@@ -14,6 +18,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center; 
+
+    @media screen and (max-width: 768px) {
+      padding-top: 120px;
+    }
   }
 
   &__header {
@@ -29,6 +37,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: #F3F3F3;
 
     @media screen and (max-width: 768px) {
       padding: 20px 10px;

@@ -57,60 +57,98 @@ $(document).ready(function () {
   }
   radio()
 
-  ymaps.ready(function () {
-    var myMap = new ymaps.Map('map', {
-            center: [55.751574, 37.573856],
-            zoom: 9
-        }, {
-            searchControlProvider: 'yandex#search'
-        }),
+  //ymaps.ready(function () {
+  //  var myMap = new ymaps.Map('map', {
+  //          center: [55.751574, 37.573856],
+  //          zoom: 9
+  //      }, {
+  //          searchControlProvider: 'yandex#search'
+  //      }),
 
-        // Создаём макет содержимого.
-        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-        ),
+  //      // Создаём макет содержимого.
+  //      MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+  //          '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+  //      ),
 
-        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-            hintContent: 'Собственный значок метки',
-            balloonContent: 'Это красивая метка'
-        }, {
-            // Опции.
-            // Необходимо указать данный тип макета.
-            iconLayout: 'default#image',
-            // Своё изображение иконки метки.
-            iconImageHref: 'images/myIcon.gif',
-            // Размеры метки.
-            iconImageSize: [30, 42],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-            iconImageOffset: [-5, -38]
-        }),
+  //      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+  //          hintContent: 'Собственный значок метки',
+  //          balloonContent: 'Это красивая метка'
+  //      }, {
+  //          // Опции.
+  //          // Необходимо указать данный тип макета.
+  //          iconLayout: 'default#image',
+  //          // Своё изображение иконки метки.
+  //          iconImageHref: 'images/myIcon.gif',
+  //          // Размеры метки.
+  //          iconImageSize: [30, 42],
+  //          // Смещение левого верхнего угла иконки относительно
+  //          // её "ножки" (точки привязки).
+  //          iconImageOffset: [-5, -38]
+  //      }),
 
-        myPlacemarkWithContent = new ymaps.Placemark([55.661574, 37.573856], {
-            hintContent: 'Собственный значок метки с контентом',
-            balloonContent: 'А эта — новогодняя',
-            iconContent: '12'
-        }, {
-            // Опции.
-            // Необходимо указать данный тип макета.
-            iconLayout: 'default#imageWithContent',
-            // Своё изображение иконки метки.
-            iconImageHref: 'images/ball.png',
-            // Размеры метки.
-            iconImageSize: [48, 48],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-            iconImageOffset: [-24, -24],
-            // Смещение слоя с содержимым относительно слоя с картинкой.
-            iconContentOffset: [15, 15],
-            // Макет содержимого.
-            iconContentLayout: MyIconContentLayout
-        });
+  //      myPlacemarkWithContent = new ymaps.Placemark([55.661574, 37.573856], {
+  //          hintContent: 'Собственный значок метки с контентом',
+  //          balloonContent: 'А эта — новогодняя',
+  //          iconContent: '12'
+  //      }, {
+  //          // Опции.
+  //          // Необходимо указать данный тип макета.
+  //          iconLayout: 'default#imageWithContent',
+  //          // Своё изображение иконки метки.
+  //          iconImageHref: 'images/ball.png',
+  //          // Размеры метки.
+  //          iconImageSize: [48, 48],
+  //          // Смещение левого верхнего угла иконки относительно
+  //          // её "ножки" (точки привязки).
+  //          iconImageOffset: [-24, -24],
+  //          // Смещение слоя с содержимым относительно слоя с картинкой.
+  //          iconContentOffset: [15, 15],
+  //          // Макет содержимого.
+  //          iconContentLayout: MyIconContentLayout
+  //      });
 
-    myMap.geoObjects
-        .add(myPlacemark)
-        .add(myPlacemarkWithContent);
-});
+  //  myMap.geoObjects
+  //      .add(myPlacemark)
+  //      .add(myPlacemarkWithContent);
+  //});
+  
+  
+  $(".select").on("click", ".select__head", function () {
+    if ($(this).hasClass("open")) {
+      $(this).removeClass("open");
+      $(this).next().fadeOut();
+
+    } else {
+      $(".select__head").removeClass("open");
+      $(".select__list").fadeOut();
+      $(this).addClass("open");
+      $(this).next().fadeIn();
+      
+    }
+  });
+
+  $(".select").on("click", ".select__item", function () {
+    $(".select__head").removeClass("open");
+    $(this).parent().fadeOut();
+    $(this).parent().prev().text($(this).text());
+    $(this).parent().prev().prev().val($(this).text());
+
+    
+  });
+
+  $('.select__item').on('click', function () {
+    $(".select__item").removeClass("active");
+    $(this).addClass("active");
+    
+
+  })
+
+  $(document).click(function (e) {
+      if (!$(e.target).closest(".select").length) {
+          $(".select__head").removeClass("open");
+          $(".select__list").fadeOut();
+      }
+  });
 
 });
 

@@ -15,12 +15,12 @@
 
 	<body>
     <div class="wrapper">
-      <!-- Ordering -->
+      <!-- layout-product -->
 
-      <div class="ordering">
-        <div class="ordering__container container">
-          <div class="ordering__inner">
-            <div class="ordering__cart">
+      <div class="layout-product">
+        <div class="layout-product__container container">
+          <div class="layout-product__inner">
+            <div class="layout-product__cart">
               <div class="cart cart-payment">
                 <div class="cart__inner">
                   <div class="cart__title">Оплата</div>
@@ -72,16 +72,24 @@
                   <div class="cart__title">Доставка</div>
   
                   <div class="cart__delivery delivery">
-                    <div class="delivery__radio">
-                      <label class="radio mr">
+                    <div class="delivery__radio radio-delivery">
+                      <label class="radio radio-delivery__inner mr">
                         <input type="radio" name="toggle" class="radio__input" />
-                        <span></span>
+                        <span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="11.511" height="9.528" viewBox="0 0 11.511 9.528">
+                            <path id="ok" d="M242,306.21l4.14,4.14,5.86-7.933" transform="translate(-241.293 -301.823)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+                          </svg>
+                        </span>
                         <div class="radio__name">Самовывоз</div>
                       </label>
   
-                      <label class="radio">
+                      <label class="radio radio-delivery__inner">
                         <input type="radio" name="toggle" class="radio__input" />
-                        <span></span>
+                        <span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="11.511" height="9.528" viewBox="0 0 11.511 9.528">
+                            <path id="ok" d="M242,306.21l4.14,4.14,5.86-7.933" transform="translate(-241.293 -301.823)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+                          </svg>
+                        </span>
                         <div class="radio__name">Курьером</div>
                       </label>
                     </div>
@@ -137,7 +145,7 @@
               </div>
             </div>
   
-            <div class="ordering__check check">
+            <div class="layout-product__check check">
               <div class="check__inner">
                 <button class="check__button">
                   <a href="#" class="btnMain btn-green">Оплатить онлайн</a>
