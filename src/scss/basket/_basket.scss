@@ -2,6 +2,10 @@
 .basket {
   padding-bottom: 40px;
 
+  @media screen and (max-width: 991px) {
+    padding: 0 10px 20px 10px;
+  }
+
   &__checkbox {
     margin-right: 20px;
 
@@ -28,6 +32,10 @@
     margin-top: 1px;
     padding: 20px;
     background: #FFFFFF;
+
+    @media screen and (max-width: 767px) {
+      padding: 20px 10px;
+    }
   }
 
   &__banner {
@@ -91,10 +99,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 14px 10px;
+    }
   }
 
   &__name {
     font-weight: bold;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 15px;
+    }
   }
 
   &__items {
@@ -201,17 +219,30 @@
 }
 
 
-
-
 .cart-basket {
 
   &__inner{
     padding-top: 20px;
     display: flex;
 
+    
+
+
     &_border{
       padding-bottom: 20px;
       border-bottom: 1px solid #CFD0D2 ;
+    }
+  }
+
+  &__body{
+    display: flex;
+    width: 100%;
+    @media screen and (max-width: 991px) {
+      position: relative;
+      flex-direction: column;
+      width: 100%;
+      max-width: 100%;
+      padding-bottom: 35px;
     }
   }
 
@@ -226,14 +257,44 @@
       display: flex;
       align-items: flex-start;
     }
-  }
 
-  &__image {
+    @media screen and (max-width: 991px) {
+      align-items: center;
+      align-self: flex-start;
+      margin-right: 11px;
+      .brand-img{
+        margin-bottom: 0;
+        width: 60px;
+        height: 60px;
+      }
+    }
   }
 
   &__content {
     max-width: 340px;
     width: 100%;
+    margin-right: 30px;
+
+    @media screen and (max-width: 991px) {
+      order: 2;
+      margin-right: 0;
+      margin-bottom: 14px;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  &__sale{
+    @media screen and (max-width: 991px) {
+      order: 1;
+      margin-bottom: 14px;
+    }
+  }
+
+  &__amount{
+    @media screen and (max-width: 991px) {
+      order: 3;
+    }
   }
 
   &__name {
@@ -249,13 +310,18 @@
     margin-bottom: 12px;
   }
 
-  &__buttons {
+  &__warning {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #FF0D0D;
   }
 
-  &__sale {
-  }
-
-  &__amount {
+  &__buttons{
+    @media screen and (max-width: 991px) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
   }
 }
 
@@ -270,6 +336,10 @@
 
   &_light-orange {
     background: #FDCA31
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
   }
 }
 .description-cart {
@@ -321,6 +391,20 @@
 
   &__sale {
     color: #FF0D0D;
+  }
+}
+
+.media-big{
+  @media screen and (max-width: 1400px) {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: 991px) {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
   }
 }
 

@@ -57,6 +57,12 @@
   &__list {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 768px) {
+      max-width: 350px;
+      width: 100%;
+      justify-content: space-between;
+    }
   }
 
   &__link {
@@ -79,6 +85,9 @@
       @media screen and (max-width: 768px) {
         font-size: 16px;
       }
+    }
+    .active{
+      font-weight: bold;
     }
   }
 
