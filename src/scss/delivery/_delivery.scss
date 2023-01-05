@@ -265,7 +265,7 @@
 
   &__inner{
     height: 100%;
-
+    overflow: auto;
     display: flex;
     flex-direction: column;
   }
@@ -288,6 +288,7 @@
     padding: 20px;
     border: 1px solid #D8D8D8;
     border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
 
     &:hover{
@@ -325,6 +326,21 @@
     margin-bottom: 25px;
     font-size: 30px;
     font-weight: normal;
+
+    @media screen and (max-width: 767px) {
+      font-size: 22px;
+    }
+  }
+
+  &__info{
+    font-size: 16px;
+    max-width: 360px;
+    line-height: 1.4;
+    margin-bottom: 70px;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
   }
   
   &__buttons {
@@ -379,7 +395,7 @@
   }
 
   @media screen and (max-width: 767px) {
-    padding: 10px;
+    padding: 30px 10px;
     width: 100%;
   }
 
@@ -404,7 +420,13 @@
     margin-bottom: 40px;
   }
 
-  &__item {
+  &__description {
+    color: #8B99A1;
+    line-height: 1.4;
+    
+    @media screen and (max-width: 767px) {
+      max-width: 295px;
+    }
   }
 }
 
@@ -428,6 +450,10 @@
       height: 100%;
       resize: none;
     }
+  }
+
+  &.mb-20{
+    margin-bottom: 20px;
   }
 }
 .delivery-address__field--address,

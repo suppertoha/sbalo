@@ -9,10 +9,39 @@
     border: 1px solid  #005BFF;
   }
 
-  &::placeholder{
-    color: #8B99A1;
-    font-size: 16px;
-  }
+}
+
+.form-item{
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+
+
+.form-label {
+  position: absolute;
+  pointer-events: none;
+  left: 20px;
+  right: 20px;
+  font-size: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 40px;
+  transition: .3s;
+}
+
+.textareaMain{
+  top: 0px;
+  transform: translateY(0%);
+}
+
+.inputMain:focus~.form-label,
+.inputMain:not(:focus):valid~.form-label {
+  top: -10px;
+  transform: translateY(0%);
+  font-size: 10px;
 }
 
 .modal-button{
@@ -240,19 +269,79 @@
   background: #000000 ;
 }
 
+.payment-product {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 6px #00000029;
+  opacity: 1;
 
+  @media screen and (max-width: 991px) {
+    &.w-991{
+      display: block;
+    }
+  }
 
+  @media screen and (max-width: 1400px) {
+    &.w-1400{
+      display: block;
+    }
+  }
 
+  &__inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
 
+  &__button{
+    max-width: 200px;
 
+    .btnMain {
+      height: 40px;
+    }
+  }
 
+  &__content {
+    align-self: center;
 
+    li{
+      &:not(:first-child){
+        margin-top: 3px;
+      }
+    }
+  }
 
+  &__sum {
+    font-weight: bold;
+  }
 
+  &__description {
+    color: #8B99A1;
+    font-size: 14px;
+  }
+}
+.check {
 
+  &__button {
+    @media screen and (max-width: 991px) {
+      .w-991{
+        span{
+          display: none;
+        }
 
+        &::before{
+          content: attr(data-button);
+        }
+      }
+    }
 
-
+  }
+}
 
 .btnMain {
   transition: 300ms;
@@ -666,6 +755,10 @@
     font-size: 20px;
     margin-bottom: 10px;
     font-weight: normal;
+
+    &.mb-20{
+      margin-bottom: 20px;
+    }
   }
 
   &__info {

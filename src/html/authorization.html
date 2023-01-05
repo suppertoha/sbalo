@@ -55,8 +55,10 @@
                 <div class="form-autorization__info">
                   Мы отправим код или позвоним. Отвечать <br> на звонок не нужно. Код может прийти на почту или в СМС
                 </div>
-                <div class="form-autorization__input">
-                  <input class="inputMain" type="tel" placeholder="Телефон*">
+                <div class="form-item delivery-address__field delivery-address__field--tel"> 
+                  <input class="inputMain" type="tel" name="address" required>
+                  <label class="form-label">Телефон*</label>
+                  <small class="delivery-address__error-msg"></small>
                 </div>
 
                 <button class="form-autorization__button">

@@ -409,6 +409,10 @@
     flex-direction: column;
     width: 100%;
     max-width: 100%;
+
+    &.w-1400{
+      padding-bottom: 80px;
+    }
   }
 
   @media screen and (max-width: 991px) {
