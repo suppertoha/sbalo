@@ -422,5 +422,147 @@
   }
 }
 
+.catalog-slide {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+  padding: 0 10px;
+  &__view {
+    padding: 80px 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+  }
+
+  &__img {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+  }
+
+  &__fog {
+  }
+
+  &__header {
+  }
+
+  &__title {
+    display: block;
+    font-size: 10px;
+    line-height: 15px;
+    height: 70%;
+    overflow: hidden;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    height: auto;
+  }
+
+  &__price {
+    font-size: 18px;
+    overflow: hidden;
+    line-height: 20px;
+    height: calc(45.2% - 5px);
+    font-weight: bold;
+  }
+}
+
+.recommended {
+
+  &__inner {
+  }
+
+  &__title {
+    text-transform: uppercase;
+    opacity: 1;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  &__slider {
+    padding: 0 20px;
+    background: #ffffff;
+  }
+}
+
+.slider-recommended{
+  position: relative;
+  &__container{
+    padding: 0 0px;
+    background-color: #f3f3f3;
+  }
+  &__item{
+    //&:not(:first-child){
+    //  border-left: 1px solid #F3F3F3;
+    //}
+    background-color: #fff;
+  }
+
+  &__items{
+    
+  }
+
+  &__next{
+    transform: rotateY(180deg);
+  }
+
+  &__next, &__prev{
+    background: #CFD0D2;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: 300ms;
+    svg{
+      transition: 300ms;
+    }
+
+    &:hover{
+      background: #000000;
+
+      svg{
+        fill: #ffffff;
+      }
+    }
+  }
+}
+
+.swiper-button-next:after, .swiper-button-prev:after{
+  display: none;
+}
+
+.swiper-button-prev {
+  left: -20px;
+}
+
+.swiper-button-next {
+  right: -20px;
+}
+
+.item-sale{
+  
+  &__body{
+    display: flex;
+  }
+
+  &__el{
+    background-color: red;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: 1px solid #000;
+    padding: 4px 5px;
+    margin-bottom: 4px;
+  }
+}
+
+
+
+
+
 
 

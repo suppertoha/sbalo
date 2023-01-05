@@ -1,44 +1,56 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="viewport" content="width=device-width" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./libs/fancybox/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="css/main.css">
-		<title>Basket</title>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./libs/fancybox/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="./libs/swiper/swiper.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Basket</title>
+  </head>
 
-
-	</head>
-
-	<body>
+  <body>
     <div class="wrapper">
       <!-- layout-product -->
 
       <div class="layout-product">
         <div class="layout-product__container container">
           <div class="layout-product__inner media-big w-1400">
-
             <div class="layout-product__cart basket">
               <div class="basket__inner">
                 <div class="basket__header">
                   <div class="basket__buttons">
-
                     <div class="basket__checkbox">
                       <label class="checkbox-button">
-                        <input type="checkbox" name="toggle" class="checkbox-button__input">
+                        <input type="checkbox" name="toggle" class="checkbox-button__input" />
                         <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="11.511" height="9.528" viewBox="0 0 11.511 9.528">
-                            <path id="ok" d="M242,306.21l4.14,4.14,5.86-7.933" transform="translate(-241.293 -301.823)" fill="none" stroke-linejoin="round" stroke-width="2"/>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="11.511"
+                            height="9.528"
+                            viewBox="0 0 11.511 9.528"
+                          >
+                            <path
+                              id="ok"
+                              d="M242,306.21l4.14,4.14,5.86-7.933"
+                              transform="translate(-241.293 -301.823)"
+                              fill="none"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                            />
                           </svg>
                         </span>
                         <div class="checkbox-button__name">Выбрать все</div>
                       </label>
                     </div>
 
-                    <button class="basket__button btn-hover"> Удалить выбранные</button>
+                    <button class="basket__button btn-hover">Удалить выбранные</button>
                   </div>
                 </div>
 
@@ -50,51 +62,137 @@
                       <div class="banner-basket__items">
                         <div class="banner-basket__item">
                           <div class="banner-basket__image">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25.964" height="18" viewBox="0 0 25.964 18">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="25.964"
+                              height="18"
+                              viewBox="0 0 25.964 18"
+                            >
                               <g id="delivery" transform="translate(0 -78.521)">
-                                <g id="Сгруппировать_489" data-name="Сгруппировать 489" transform="translate(16.336 89.976)">
+                                <g
+                                  id="Сгруппировать_489"
+                                  data-name="Сгруппировать 489"
+                                  transform="translate(16.336 89.976)"
+                                >
                                   <g id="Сгруппировать_488" data-name="Сгруппировать 488">
-                                    <path id="Контур_6" data-name="Контур 6" d="M325.424,304.4a3.273,3.273,0,1,0,3.273,3.273A3.276,3.276,0,0,0,325.424,304.4Zm0,4.909a1.636,1.636,0,1,1,1.636-1.636A1.638,1.638,0,0,1,325.424,309.312Z" transform="translate(-322.151 -304.403)"/>
+                                    <path
+                                      id="Контур_6"
+                                      data-name="Контур 6"
+                                      d="M325.424,304.4a3.273,3.273,0,1,0,3.273,3.273A3.276,3.276,0,0,0,325.424,304.4Zm0,4.909a1.636,1.636,0,1,1,1.636-1.636A1.638,1.638,0,0,1,325.424,309.312Z"
+                                      transform="translate(-322.151 -304.403)"
+                                    />
                                   </g>
                                 </g>
-                                <g id="Сгруппировать_491" data-name="Сгруппировать 491" transform="translate(5.155 89.976)">
+                                <g
+                                  id="Сгруппировать_491"
+                                  data-name="Сгруппировать 491"
+                                  transform="translate(5.155 89.976)"
+                                >
                                   <g id="Сгруппировать_490" data-name="Сгруппировать 490">
-                                    <path id="Контур_7" data-name="Контур 7" d="M104.92,304.4a3.273,3.273,0,1,0,3.273,3.273A3.276,3.276,0,0,0,104.92,304.4Zm0,4.909a1.636,1.636,0,1,1,1.636-1.636A1.638,1.638,0,0,1,104.92,309.312Z" transform="translate(-101.647 -304.403)"/>
+                                    <path
+                                      id="Контур_7"
+                                      data-name="Контур 7"
+                                      d="M104.92,304.4a3.273,3.273,0,1,0,3.273,3.273A3.276,3.276,0,0,0,104.92,304.4Zm0,4.909a1.636,1.636,0,1,1,1.636-1.636A1.638,1.638,0,0,1,104.92,309.312Z"
+                                      transform="translate(-101.647 -304.403)"
+                                    />
                                   </g>
                                 </g>
-                                <g id="Сгруппировать_493" data-name="Сгруппировать 493" transform="translate(16.773 80.157)">
+                                <g
+                                  id="Сгруппировать_493"
+                                  data-name="Сгруппировать 493"
+                                  transform="translate(16.773 80.157)"
+                                >
                                   <g id="Сгруппировать_492" data-name="Сгруппировать 492">
-                                    <path id="Контур_8" data-name="Контур 8" d="M335.8,111.241a.819.819,0,0,0-.731-.451h-4.309v1.636h3.8l2.228,4.431,1.462-.735Z" transform="translate(-330.756 -110.79)"/>
+                                    <path
+                                      id="Контур_8"
+                                      data-name="Контур 8"
+                                      d="M335.8,111.241a.819.819,0,0,0-.731-.451h-4.309v1.636h3.8l2.228,4.431,1.462-.735Z"
+                                      transform="translate(-330.756 -110.79)"
+                                    />
                                   </g>
                                 </g>
-                                <g id="Сгруппировать_495" data-name="Сгруппировать 495" transform="translate(10.964 92.457)">
+                                <g
+                                  id="Сгруппировать_495"
+                                  data-name="Сгруппировать 495"
+                                  transform="translate(10.964 92.457)"
+                                >
                                   <g id="Сгруппировать_494" data-name="Сгруппировать 494">
-                                    <rect id="Прямоугольник_976" data-name="Прямоугольник 976" width="6.191" height="1.636"/>
+                                    <rect
+                                      id="Прямоугольник_976"
+                                      data-name="Прямоугольник 976"
+                                      width="6.191"
+                                      height="1.636"
+                                    />
                                   </g>
                                 </g>
-                                <g id="Сгруппировать_497" data-name="Сгруппировать 497" transform="translate(2.318 92.457)">
+                                <g
+                                  id="Сгруппировать_497"
+                                  data-name="Сгруппировать 497"
+                                  transform="translate(2.318 92.457)"
+                                >
                                   <g id="Сгруппировать_496" data-name="Сгруппировать 496">
-                                    <path id="Контур_9" data-name="Контур 9" d="M49.369,353.345H46.533a.818.818,0,1,0,0,1.636H49.37a.818.818,0,1,0,0-1.636Z" transform="translate(-45.715 -353.345)"/>
+                                    <path
+                                      id="Контур_9"
+                                      data-name="Контур 9"
+                                      d="M49.369,353.345H46.533a.818.818,0,1,0,0,1.636H49.37a.818.818,0,1,0,0-1.636Z"
+                                      transform="translate(-45.715 -353.345)"
+                                    />
                                   </g>
                                 </g>
-                                <g id="Сгруппировать_499" data-name="Сгруппировать 499" transform="translate(2.318 78.521)">
+                                <g
+                                  id="Сгруппировать_499"
+                                  data-name="Сгруппировать 499"
+                                  transform="translate(2.318 78.521)"
+                                >
                                   <g id="Сгруппировать_498" data-name="Сгруппировать 498">
-                                    <path id="Контур_10" data-name="Контур 10" d="M69.189,87.456l-1.609-2.073a.817.817,0,0,0-.646-.316H60.988V79.339a.818.818,0,0,0-.818-.818H46.533a.818.818,0,1,0,0,1.636H59.351v5.727a.818.818,0,0,0,.818.818h6.363l1.192,1.535v4.22H65.46a.818.818,0,0,0,0,1.636h3.082a.818.818,0,0,0,.818-.818V87.957A.819.819,0,0,0,69.189,87.456Z" transform="translate(-45.715 -78.521)"/>
+                                    <path
+                                      id="Контур_10"
+                                      data-name="Контур 10"
+                                      d="M69.189,87.456l-1.609-2.073a.817.817,0,0,0-.646-.316H60.988V79.339a.818.818,0,0,0-.818-.818H46.533a.818.818,0,1,0,0,1.636H59.351v5.727a.818.818,0,0,0,.818.818h6.363l1.192,1.535v4.22H65.46a.818.818,0,0,0,0,1.636h3.082a.818.818,0,0,0,.818-.818V87.957A.819.819,0,0,0,69.189,87.456Z"
+                                      transform="translate(-45.715 -78.521)"
+                                    />
                                   </g>
                                 </g>
-                                <g id="Сгруппировать_501" data-name="Сгруппировать 501" transform="translate(1.336 88.312)">
+                                <g
+                                  id="Сгруппировать_501"
+                                  data-name="Сгруппировать 501"
+                                  transform="translate(1.336 88.312)"
+                                >
                                   <g id="Сгруппировать_500" data-name="Сгруппировать 500">
-                                    <path id="Контур_11" data-name="Контур 11" d="M30.935,271.6H27.171a.818.818,0,0,0,0,1.636h3.764a.818.818,0,0,0,0-1.636Z" transform="translate(-26.353 -271.597)"/>
+                                    <path
+                                      id="Контур_11"
+                                      data-name="Контур 11"
+                                      d="M30.935,271.6H27.171a.818.818,0,0,0,0,1.636h3.764a.818.818,0,0,0,0-1.636Z"
+                                      transform="translate(-26.353 -271.597)"
+                                    />
                                   </g>
                                 </g>
-                                <g id="Сгруппировать_503" data-name="Сгруппировать 503" transform="translate(0 85.094)">
+                                <g
+                                  id="Сгруппировать_503"
+                                  data-name="Сгруппировать 503"
+                                  transform="translate(0 85.094)"
+                                >
                                   <g id="Сгруппировать_502" data-name="Сгруппировать 502">
-                                    <path id="Контур_12" data-name="Контур 12" d="M7.8,208.134H.818a.818.818,0,0,0,0,1.636H7.8a.818.818,0,0,0,0-1.636Z" transform="translate(0 -208.134)"/>
+                                    <path
+                                      id="Контур_12"
+                                      data-name="Контур 12"
+                                      d="M7.8,208.134H.818a.818.818,0,0,0,0,1.636H7.8a.818.818,0,0,0,0-1.636Z"
+                                      transform="translate(0 -208.134)"
+                                    />
                                   </g>
                                 </g>
-                                <g id="Сгруппировать_505" data-name="Сгруппировать 505" transform="translate(1.336 81.876)">
+                                <g
+                                  id="Сгруппировать_505"
+                                  data-name="Сгруппировать 505"
+                                  transform="translate(1.336 81.876)"
+                                >
                                   <g id="Сгруппировать_504" data-name="Сгруппировать 504">
-                                    <path id="Контур_13" data-name="Контур 13" d="M34.153,144.672H27.171a.818.818,0,0,0,0,1.636h6.982a.818.818,0,0,0,0-1.636Z" transform="translate(-26.353 -144.672)"/>
+                                    <path
+                                      id="Контур_13"
+                                      data-name="Контур 13"
+                                      d="M34.153,144.672H27.171a.818.818,0,0,0,0,1.636h6.982a.818.818,0,0,0,0-1.636Z"
+                                      transform="translate(-26.353 -144.672)"
+                                    />
                                   </g>
                                 </g>
                               </g>
@@ -105,18 +203,46 @@
 
                         <div class="banner-basket__item">
                           <div class="banner-basket__image">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18.182" height="20" viewBox="0 0 18.182 20">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                              width="18.182"
+                              height="20"
+                              viewBox="0 0 18.182 20"
+                            >
                               <defs>
                                 <clipPath id="clip-path">
-                                  <path id="path2511" d="M0-682.665H18.182v20H0Z" transform="translate(0 682.665)"/>
+                                  <path
+                                    id="path2511"
+                                    d="M0-682.665H18.182v20H0Z"
+                                    transform="translate(0 682.665)"
+                                  />
                                 </clipPath>
                               </defs>
                               <g id="geo" transform="translate(0 0.998)">
                                 <g id="g2505" transform="translate(0 -0.998)">
                                   <g id="g2507">
                                     <g id="g2509" clip-path="url(#clip-path)">
-                                      <path id="path2517" d="M-214.14-625.549c-2.131-3.2-5.859-7.528-5.859-11.257a5.866,5.866,0,0,1,5.859-5.859,5.866,5.866,0,0,1,5.859,5.859C-208.281-633.077-212.009-628.745-214.14-625.549Z" transform="translate(223.231 644.107)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/>
-                                      <path id="path2521" d="M-97.336-194.673A2.666,2.666,0,0,1-100-197.336,2.666,2.666,0,0,1-97.336-200a2.666,2.666,0,0,1,2.663,2.663A2.666,2.666,0,0,1-97.336-194.673Z" transform="translate(106.427 204.637)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/>
+                                      <path
+                                        id="path2517"
+                                        d="M-214.14-625.549c-2.131-3.2-5.859-7.528-5.859-11.257a5.866,5.866,0,0,1,5.859-5.859,5.866,5.866,0,0,1,5.859,5.859C-208.281-633.077-212.009-628.745-214.14-625.549Z"
+                                        transform="translate(223.231 644.107)"
+                                        fill="none"
+                                        stroke="#000"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="1.7"
+                                      />
+                                      <path
+                                        id="path2521"
+                                        d="M-97.336-194.673A2.666,2.666,0,0,1-100-197.336,2.666,2.666,0,0,1-97.336-200a2.666,2.666,0,0,1,2.663,2.663A2.666,2.666,0,0,1-97.336-194.673Z"
+                                        transform="translate(106.427 204.637)"
+                                        fill="none"
+                                        stroke="#000"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="1.7"
+                                      />
                                     </g>
                                   </g>
                                 </g>
@@ -133,49 +259,59 @@
                   <!-- Cart-basket -->
                   <div class="basket__cart cart-basket">
                     <div class="cart-basket__inner cart-basket__inner_border">
-
                       <div class="cart-basket__choice">
                         <label class="checkbox-button">
-                          <input type="checkbox" name="toggle" class="checkbox-button__input">
+                          <input type="checkbox" name="toggle" class="checkbox-button__input" />
                           <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="11.511" height="9.528" viewBox="0 0 11.511 9.528">
-                              <path id="ok" d="M242,306.21l4.14,4.14,5.86-7.933" transform="translate(-241.293 -301.823)" fill="none" stroke-linejoin="round" stroke-width="2"/>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="11.511"
+                              height="9.528"
+                              viewBox="0 0 11.511 9.528"
+                            >
+                              <path
+                                id="ok"
+                                d="M242,306.21l4.14,4.14,5.86-7.933"
+                                transform="translate(-241.293 -301.823)"
+                                fill="none"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                              />
                             </svg>
                           </span>
                         </label>
 
                         <a href="#" class="cart-basket__image brand-img">
-                          <img src="images/brand-img1.jpg" alt="brand">
+                          <img src="images/brand-img1.jpg" alt="brand" />
                         </a>
                       </div>
                       <div class="cart-basket__body">
-
                         <div class="cart-basket__content">
                           <div class="cart-basket__name">
                             sd981-3 Ботильоны зимние черные замшевые на широком каблуке на молнии
                           </div>
-  
+
                           <div class="cart-basket__info info-cart info-cart_light-blue">
                             Оплата после примерки
                           </div>
-  
+
                           <div class="cart-basket__description description-cart">
                             <ul class="description-cart__items">
                               <div class="description-cart__item">Размер RU 36</div>
                               <div class="description-cart__item">Цвет: черный</div>
                             </ul>
                           </div>
-  
+
                           <div class="cart-basket__info info-cart info-cart_light-orange">
                             Плати частями по 500 RUB / мес
                           </div>
-  
+
                           <div class="cart-basket__buttons buttons-cart">
                             <button class="basket__button btn-hover">В избранное</button>
                             <button class="basket__button btn-hover">Удалить</button>
                           </div>
                         </div>
-  
+
                         <div class="cart-basket__sale sale-cart">
                           <div class="sale-cart__inner">
                             <div class="sale-cart__prise">6 599 RUB</div>
@@ -185,91 +321,151 @@
                             </ul>
                           </div>
                         </div>
-  
+
                         <div class="cart-basket__amount">
                           <div class="select">
-                            <input class="select__input" type="hidden" name="">
+                            <input class="select__input" type="hidden" name="" />
                             <div class="select__head">1</div>
-                            <ul class="select__list" style="display: none;">
-                                <li class="select__item">1
-                                  <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="11.511" height="9.528" viewBox="0 0 11.511 9.528">
-                                      <path id="ok" d="M242,306.21l4.14,4.14,5.86-7.933" transform="translate(-241.293 -301.823)" fill="none" stroke-linejoin="round" stroke-width="2"/>
-                                    </svg>
-                                  </span>
-                                </li>
-                                <li class="select__item">2
-                                  <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="11.511" height="9.528" viewBox="0 0 11.511 9.528">
-                                      <path id="ok" d="M242,306.21l4.14,4.14,5.86-7.933" transform="translate(-241.293 -301.823)" fill="none" stroke-linejoin="round" stroke-width="2"/>
-                                    </svg>
-                                  </span>
-                                </li>
-                                <li class="select__item">3
-                                  <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="11.511" height="9.528" viewBox="0 0 11.511 9.528">
-                                      <path id="ok" d="M242,306.21l4.14,4.14,5.86-7.933" transform="translate(-241.293 -301.823)" fill="none" stroke-linejoin="round" stroke-width="2"/>
-                                    </svg>
-                                  </span>
-                                </li>
-  
-                                <li class="select__item">4
-                                  <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="11.511" height="9.528" viewBox="0 0 11.511 9.528">
-                                      <path id="ok" d="M242,306.21l4.14,4.14,5.86-7.933" transform="translate(-241.293 -301.823)" fill="none" stroke-linejoin="round" stroke-width="2"/>
-                                    </svg>
-                                  </span>
-                                </li>
+                            <ul class="select__list" style="display: none">
+                              <li class="select__item">
+                                1
+                                <span>
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="11.511"
+                                    height="9.528"
+                                    viewBox="0 0 11.511 9.528"
+                                  >
+                                    <path
+                                      id="ok"
+                                      d="M242,306.21l4.14,4.14,5.86-7.933"
+                                      transform="translate(-241.293 -301.823)"
+                                      fill="none"
+                                      stroke-linejoin="round"
+                                      stroke-width="2"
+                                    />
+                                  </svg>
+                                </span>
+                              </li>
+                              <li class="select__item">
+                                2
+                                <span>
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="11.511"
+                                    height="9.528"
+                                    viewBox="0 0 11.511 9.528"
+                                  >
+                                    <path
+                                      id="ok"
+                                      d="M242,306.21l4.14,4.14,5.86-7.933"
+                                      transform="translate(-241.293 -301.823)"
+                                      fill="none"
+                                      stroke-linejoin="round"
+                                      stroke-width="2"
+                                    />
+                                  </svg>
+                                </span>
+                              </li>
+                              <li class="select__item">
+                                3
+                                <span>
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="11.511"
+                                    height="9.528"
+                                    viewBox="0 0 11.511 9.528"
+                                  >
+                                    <path
+                                      id="ok"
+                                      d="M242,306.21l4.14,4.14,5.86-7.933"
+                                      transform="translate(-241.293 -301.823)"
+                                      fill="none"
+                                      stroke-linejoin="round"
+                                      stroke-width="2"
+                                    />
+                                  </svg>
+                                </span>
+                              </li>
+
+                              <li class="select__item">
+                                4
+                                <span>
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="11.511"
+                                    height="9.528"
+                                    viewBox="0 0 11.511 9.528"
+                                  >
+                                    <path
+                                      id="ok"
+                                      d="M242,306.21l4.14,4.14,5.86-7.933"
+                                      transform="translate(-241.293 -301.823)"
+                                      fill="none"
+                                      stroke-linejoin="round"
+                                      stroke-width="2"
+                                    />
+                                  </svg>
+                                </span>
+                              </li>
                             </ul>
-                        </div>
+                          </div>
                         </div>
                       </div>
-
                     </div>
 
                     <div class="cart-basket__inner">
-
                       <div class="cart-basket__choice">
                         <label class="checkbox-button">
-                          <input type="checkbox" name="toggle" class="checkbox-button__input">
+                          <input type="checkbox" name="toggle" class="checkbox-button__input" />
                           <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="11.511" height="9.528" viewBox="0 0 11.511 9.528">
-                              <path id="ok" d="M242,306.21l4.14,4.14,5.86-7.933" transform="translate(-241.293 -301.823)" fill="none" stroke-linejoin="round" stroke-width="2"/>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="11.511"
+                              height="9.528"
+                              viewBox="0 0 11.511 9.528"
+                            >
+                              <path
+                                id="ok"
+                                d="M242,306.21l4.14,4.14,5.86-7.933"
+                                transform="translate(-241.293 -301.823)"
+                                fill="none"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                              />
                             </svg>
                           </span>
                         </label>
 
                         <a href="#" class="cart-basket__image brand-img">
-                          <img src="images/brand-img2.jpg" alt="brand">
+                          <img src="images/brand-img2.jpg" alt="brand" />
                         </a>
                       </div>
 
                       <div class="cart-basket__body">
                         <div class="cart-basket__content">
-                          <div class="cart-basket__name">
-                            OD юбка хаки экокожа короткая
-                          </div>
-  
+                          <div class="cart-basket__name">OD юбка хаки экокожа короткая</div>
+
                           <div class="cart-basket__info info-cart info-cart_light-blue">
                             Оплата после примерки
                           </div>
-  
+
                           <div class="cart-basket__description description-cart">
                             <ul class="description-cart__items">
                               <div class="description-cart__item">Размер S</div>
                             </ul>
                           </div>
-  
+
                           <div class="cart-basket__info info-cart info-cart_light-orange">
                             Плати частями по 500 RUB / мес
                           </div>
-  
+
                           <div class="cart-basket__buttons buttons-cart">
                             <button class="basket__button btn-hover">В избранное</button>
                             <button class="basket__button btn-hover">Удалить</button>
                           </div>
                         </div>
-  
+
                         <div class="cart-basket__sale sale-cart">
                           <div class="sale-cart__inner">
                             <div class="sale-cart__prise">2 299 RUB</div>
@@ -279,86 +475,107 @@
                             </ul>
                           </div>
                         </div>
-  
+
                         <div class="cart-basket__amount">
                           <div class="select">
-                            <input class="select__input" type="hidden" name="">
+                            <input class="select__input" type="hidden" name="" />
                             <div class="select__head">1</div>
-                            <ul class="select__list" style="display: none;">
-                                <li class="select__item">1
-                                  <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="11.511" height="9.528" viewBox="0 0 11.511 9.528">
-                                      <path id="ok" d="M242,306.21l4.14,4.14,5.86-7.933" transform="translate(-241.293 -301.823)" fill="none" stroke-linejoin="round" stroke-width="2"/>
-                                    </svg>
-                                  </span>
-                                </li>
-                                <li class="select__item">2
-                                  <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="11.511" height="9.528" viewBox="0 0 11.511 9.528">
-                                      <path id="ok" d="M242,306.21l4.14,4.14,5.86-7.933" transform="translate(-241.293 -301.823)" fill="none" stroke-linejoin="round" stroke-width="2"/>
-                                    </svg>
-                                  </span>
-                                </li>
-                                <li class="select__item">3
-                                  <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="11.511" height="9.528" viewBox="0 0 11.511 9.528">
-                                      <path id="ok" d="M242,306.21l4.14,4.14,5.86-7.933" transform="translate(-241.293 -301.823)" fill="none" stroke-linejoin="round" stroke-width="2"/>
-                                    </svg>
-                                  </span>
-                                </li>
-  
-                                <li class="select__item">4
-                                  <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="11.511" height="9.528" viewBox="0 0 11.511 9.528">
-                                      <path id="ok" d="M242,306.21l4.14,4.14,5.86-7.933" transform="translate(-241.293 -301.823)" fill="none" stroke-linejoin="round" stroke-width="2"/>
-                                    </svg>
-                                  </span>
-                                </li>
+                            <ul class="select__list" style="display: none">
+                              <li class="select__item">
+                                1
+                                <span>
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="11.511"
+                                    height="9.528"
+                                    viewBox="0 0 11.511 9.528"
+                                  >
+                                    <path
+                                      id="ok"
+                                      d="M242,306.21l4.14,4.14,5.86-7.933"
+                                      transform="translate(-241.293 -301.823)"
+                                      fill="none"
+                                      stroke-linejoin="round"
+                                      stroke-width="2"
+                                    />
+                                  </svg>
+                                </span>
+                              </li>
+                              <li class="select__item">
+                                2
+                                <span>
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="11.511"
+                                    height="9.528"
+                                    viewBox="0 0 11.511 9.528"
+                                  >
+                                    <path
+                                      id="ok"
+                                      d="M242,306.21l4.14,4.14,5.86-7.933"
+                                      transform="translate(-241.293 -301.823)"
+                                      fill="none"
+                                      stroke-linejoin="round"
+                                      stroke-width="2"
+                                    />
+                                  </svg>
+                                </span>
+                              </li>
+                              <li class="select__item">
+                                3
+                                <span>
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="11.511"
+                                    height="9.528"
+                                    viewBox="0 0 11.511 9.528"
+                                  >
+                                    <path
+                                      id="ok"
+                                      d="M242,306.21l4.14,4.14,5.86-7.933"
+                                      transform="translate(-241.293 -301.823)"
+                                      fill="none"
+                                      stroke-linejoin="round"
+                                      stroke-width="2"
+                                    />
+                                  </svg>
+                                </span>
+                              </li>
+
+                              <li class="select__item">
+                                4
+                                <span>
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="11.511"
+                                    height="9.528"
+                                    viewBox="0 0 11.511 9.528"
+                                  >
+                                    <path
+                                      id="ok"
+                                      d="M242,306.21l4.14,4.14,5.86-7.933"
+                                      transform="translate(-241.293 -301.823)"
+                                      fill="none"
+                                      stroke-linejoin="round"
+                                      stroke-width="2"
+                                    />
+                                  </svg>
+                                </span>
+                              </li>
                             </ul>
                           </div>
-  
+
                           <div class="cart-basket__warning">Скоро закончится</div>
                         </div>
                       </div>
-
                     </div>
                   </div>
                   <!-- End Cart-basket -->
 
-                  <div class="recommended">
-                    <div class="recommended__inner">
-                      <h2 class="recommended__title">
-
-                      </h2>
-                      <div class="recommended__slider slider-recommended">
-                        <div class="slider-recommended__container swiper-container">
-                          <div class="slider-recommended__items swiper-wrapper">
-                            <div class="slider-recommended__item swiper-slide">
-                              <div class="slider-recommended__image">
-
-                              </div>
-                              <div class="slider-recommended__sale">
-
-                              </div>
-                              <div class="slider-recommended__name">
-
-                              </div>
-                              <div class="slider-recommended__sum">
-
-                              </div>
-                            </div>
-                    
-                          </div>
-                        </div>
-                        <div class="slider-recommended__prev swiper-button-prev"></div>
-                        <div class="slider-recommended__next swiper-button-next"></div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
-  
+
             <!-- Check -->
             <div class="layout-product__check check media-big">
               <div class="check__inner">
@@ -369,7 +586,8 @@
                   Доступные способы и время доставки можно выбрать при оформлении заказа
                 </div>
                 <div class="check__body">
-                  <div class="check__order">Ваш заказ
+                  <div class="check__order">
+                    Ваш заказ
                     <span>2 товара • 2,5 кг</span>
                   </div>
                   <ul class="check__item item-check">
@@ -378,32 +596,29 @@
                       <span></span>
                       <div class="item-check__sum">8 893 RUB</div>
                     </li>
-  
+
                     <li class="item-check__body">
                       <div class="item-check__name">Скидка</div>
                       <span></span>
                       <div class="item-check__sum">500 RUB</div>
                     </li>
-  
+
                     <li class="item-check__body">
                       <div class="item-check__name">Доставка</div>
                       <span></span>
                       <div class="item-check__sum highlighted">Бесплатно</div>
                     </li>
-                    
                   </ul>
                 </div>
-  
+
                 <div class="check__total total-check">
                   <div class="total-check__inner">
                     <div class="total-check__name">Итого</div>
                     <div class="total-check__sum">8 893 RUB</div>
                   </div>
                 </div>
-  
-                <div class="check__promo">
-                  Промокод или сертификат
-                </div>
+
+                <div class="check__promo">Промокод или сертификат</div>
               </div>
             </div>
             <!-- End Check -->
@@ -420,20 +635,233 @@
                 </button>
               </div>
             </div>
-
-
           </div>
+
+          <!-- Recommended -->
+          <div class="recommended">
+            <div class="recommended__inner">
+              <h2 class="recommended__title">РЕКОМЕНДУЕМ</h2>
+              <div class="recommended__slider slider-recommended">
+                <div class="slider-recommended__container swiper-container">
+                  <div class="slider-recommended__items swiper-wrapper">
+                    <div class="slider-recommended__item swiper-slide">
+                      <div class="catalog-slide">
+                        <div class="catalog-slide__view item-sale">
+                          <div class="catalog-slide__img">
+                            <a href="#">
+                              <img src="images/brand-img1.jpg" alt="images">
+                            </a>
+                          </div>
+                          
+                          <div class="item-sale__body">
+                            <div class="item-sale__el">-30%</div>
+                          </div>
+                          <a
+                            href="/catalog/zhenshchiny/odezhda_2/yubki_i_shorty/od-yubka-shorty-chernaya-ekokozha-s-molniey.html"
+                          >
+                            <div class="catalog-slide__fog">
+                              <div class="btnArea-cat"></div>
+                              <div class="btnArea-cat"></div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="catalog-slide__header">
+                          <a
+                            class="catalog-slide__title"
+                            href="/catalog/zhenshchiny/odezhda_2/yubki_i_shorty/od-yubka-shorty-chernaya-ekokozha-s-molniey.html"
+                            >OD Юбка Шорты черная экокожа с молнией</a
+                          >
+                          <div class="catalog-slide__price">2&nbsp;399 RUB</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="slider-recommended__item swiper-slide">
+                      <div class="catalog-slide">
+                        <div class="catalog-slide__view">
+                          <div class="catalog-slide__img">
+                            <a href="#">
+                              <img src="images/brand-img1.jpg" alt="images">
+                            </a>
+                          </div>
+                          
+                          <div class="extraLine_sale">
+                            <div class="extraLine__tape"></div>
+                          </div>
+                          <a
+                            href="/catalog/zhenshchiny/odezhda_2/yubki_i_shorty/od-yubka-shorty-chernaya-ekokozha-s-molniey.html"
+                          >
+                            <div class="catalog-slide__fog">
+                              <div class="btnArea-cat"></div>
+                              <div class="btnArea-cat"></div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="catalog-slide__header">
+                          <a
+                            class="catalog-slide__title"
+                            href="/catalog/zhenshchiny/odezhda_2/yubki_i_shorty/od-yubka-shorty-chernaya-ekokozha-s-molniey.html"
+                            >OD Юбка Шорты черная экокожа с молнией</a
+                          >
+                          <div class="catalog-slide__price">2&nbsp;399 RUB</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="slider-recommended__item swiper-slide">
+                      <div class="catalog-slide">
+                        <div class="catalog-slide__view">
+                          <div class="catalog-slide__img">
+                            <a href="#">
+                              <img src="images/brand-img1.jpg" alt="images">
+                            </a>
+                          </div>
+                          
+                          <div class="extraLine_sale">
+                            <div class="extraLine__tape"></div>
+                          </div>
+                          <a
+                            href="/catalog/zhenshchiny/odezhda_2/yubki_i_shorty/od-yubka-shorty-chernaya-ekokozha-s-molniey.html"
+                          >
+                            <div class="catalog-slide__fog">
+                              <div class="btnArea-cat"></div>
+                              <div class="btnArea-cat"></div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="catalog-slide__header">
+                          <a
+                            class="catalog-slide__title"
+                            href="/catalog/zhenshchiny/odezhda_2/yubki_i_shorty/od-yubka-shorty-chernaya-ekokozha-s-molniey.html"
+                            >OD Юбка Шорты черная экокожа с молнией</a
+                          >
+                          <div class="catalog-slide__price">2&nbsp;399 RUB</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="slider-recommended__item swiper-slide">
+                      <div class="catalog-slide">
+                        <div class="catalog-slide__view">
+                          <div class="catalog-slide__img">
+                            <a href="#">
+                              <img src="images/brand-img1.jpg" alt="images">
+                            </a>
+                          </div>
+                          
+                          <div class="extraLine_sale">
+                            <div class="extraLine__tape"></div>
+                          </div>
+                          <a
+                            href="/catalog/zhenshchiny/odezhda_2/yubki_i_shorty/od-yubka-shorty-chernaya-ekokozha-s-molniey.html"
+                          >
+                            <div class="catalog-slide__fog">
+                              <div class="btnArea-cat"></div>
+                              <div class="btnArea-cat"></div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="catalog-slide__header">
+                          <a
+                            class="catalog-slide__title"
+                            href="/catalog/zhenshchiny/odezhda_2/yubki_i_shorty/od-yubka-shorty-chernaya-ekokozha-s-molniey.html"
+                            >OD Юбка Шорты черная экокожа с молнией</a
+                          >
+                          <div class="catalog-slide__price">2&nbsp;399 RUB</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="slider-recommended__item swiper-slide">
+                      <div class="catalog-slide">
+                        <div class="catalog-slide__view">
+                          <div class="catalog-slide__img">
+                            <a href="#">
+                              <img src="images/brand-img1.jpg" alt="images">
+                            </a>
+                          </div>
+                          
+                          <div class="extraLine_sale">
+                            <div class="extraLine__tape"></div>
+                          </div>
+                          <a
+                            href="/catalog/zhenshchiny/odezhda_2/yubki_i_shorty/od-yubka-shorty-chernaya-ekokozha-s-molniey.html"
+                          >
+                            <div class="catalog-slide__fog">
+                              <div class="btnArea-cat"></div>
+                              <div class="btnArea-cat"></div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="catalog-slide__header">
+                          <a
+                            class="catalog-slide__title"
+                            href="/catalog/zhenshchiny/odezhda_2/yubki_i_shorty/od-yubka-shorty-chernaya-ekokozha-s-molniey.html"
+                            >OD Юбка Шорты черная экокожа с молнией</a
+                          >
+                          <div class="catalog-slide__price">2&nbsp;399 RUB</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="slider-recommended__item swiper-slide">
+                      <div class="catalog-slide">
+                        <div class="catalog-slide__view">
+                          <div class="catalog-slide__img">
+                            <a href="#">
+                              <img src="images/brand-img1.jpg" alt="images">
+                            </a>
+                          </div>
+                          
+                          <div class="extraLine_sale">
+                            <div class="extraLine__tape"></div>
+                          </div>
+                          <a
+                            href="/catalog/zhenshchiny/odezhda_2/yubki_i_shorty/od-yubka-shorty-chernaya-ekokozha-s-molniey.html"
+                          >
+                            <div class="catalog-slide__fog">
+                              <div class="btnArea-cat"></div>
+                              <div class="btnArea-cat"></div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="catalog-slide__header">
+                          <a
+                            class="catalog-slide__title"
+                            href="/catalog/zhenshchiny/odezhda_2/yubki_i_shorty/od-yubka-shorty-chernaya-ekokozha-s-molniey.html"
+                            >OD Юбка Шорты черная экокожа с молнией</a
+                          >
+                          <div class="catalog-slide__price">2&nbsp;399 RUB</div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div class="slider-recommended__prev swiper-button-prev">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="8.285" height="14" viewBox="0 0 8.285 14">
+                    <path id="next" d="M12.716,0,7,5.716,1.284,0,0,1.284l7,7,7-7Z" transform="translate(8.285) rotate(90)"/>
+                  </svg>
+                </div>
+                <div class="slider-recommended__next swiper-button-next">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="8.285" height="14" viewBox="0 0 8.285 14">
+                    <path id="next" d="M12.716,0,7,5.716,1.284,0,0,1.284l7,7,7-7Z" transform="translate(8.285) rotate(90)"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Recommended -->
         </div>
       </div>
-  
+
       <!--End Ordering -->
-
     </div>
-
-		
 
     <script src="./libs/jquery/jquery-3.2.1.min.js"></script>
     <script src="./libs/fancybox/jquery.fancybox.min.js"></script>
+    <script src="./libs/swiper/swiper.min.js"></script>
     <script src="js/main.js"></script>
-	</body>
+  </body>
 </html>
