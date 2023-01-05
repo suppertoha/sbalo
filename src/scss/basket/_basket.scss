@@ -22,10 +22,27 @@
     display: flex;
     align-items: center;
     padding: 20px;
+
+    @media screen and (max-width: 360px) {
+      flex-wrap: wrap;
+      .basket__checkbox{
+        margin-bottom: 10px;
+      }
+      .basket__button{
+        &:not(:first-child){
+          margin-left: 0px;
+        }
+      }
+    }
   }
 
   &__button {
     font-size: 14px;
+
+    &:not(:first-child){
+      margin-left: 20px;
+    }
+
   }
 
   &__content {
@@ -357,14 +374,7 @@
 }
 .buttons-cart {
 }
-.basket {
 
-  &__button {
-    &:not(:first-child){
-      margin-left: 20px;
-    }
-  }
-}
 
 .sale-cart {
   flex-grow: 10;
