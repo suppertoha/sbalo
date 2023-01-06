@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
-  $('.js-button--delivery').on('click', function () {
+  $('.js-button--delivery').on('click', function (e) {
+    e.preventDefault();
     $(this).toggleClass('active');
     $('.js-form--delivery').toggleClass('active');
   });
