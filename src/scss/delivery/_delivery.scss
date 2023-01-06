@@ -320,6 +320,7 @@
       width: 100%;
       text-align: center;
       color: #ffffff;
+      display: none;
       span{
         display: none;
       }
@@ -471,6 +472,12 @@
 
   &.mb-20{
     margin-bottom: 20px;
+  }
+
+  &.none767{
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
   }
 }
 .delivery-address__field--address,
