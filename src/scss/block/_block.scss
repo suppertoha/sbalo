@@ -1,15 +1,17 @@
 
 .inputMain {
   transition: 300ms;
-  padding: 20px;
+  padding: 16px 20px 16px;
   border: 1px solid #D8D8D8;
   border-radius: 5px;
+  font-size: 16px;
 
   &:hover{
     border: 1px solid  #005BFF;
   }
 
 }
+
 
 .form-item{
   display: inline-block;
@@ -20,6 +22,7 @@
 
 .form-label {
   position: absolute;
+  color: #8B99A1;
   pointer-events: none;
   left: 20px;
   right: 20px;
@@ -36,12 +39,11 @@
   top: 0px;
   transform: translateY(0%);
 }
-
-.inputMain:focus~.form-label,
-.inputMain:not(:focus):valid~.form-label {
+.inputMain:focus ~ .form-label,
+.inputMain:not(:placeholder-shown) ~ .form-label {
   top: -10px;
   transform: translateY(0%);
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .modal-button{
@@ -51,7 +53,6 @@
 
 #hidden-courier {
   display: none;
-  background: red;
   background: #ffffff;
 }
 
@@ -279,6 +280,13 @@
   background: #FFFFFF;
   box-shadow: 0px 0px 6px #00000029;
   opacity: 1;
+  z-index: 2;
+
+  @media screen and (max-width: 1400px) {
+    .w-1400{
+      display: flex;
+    }
+  }
 
   @media screen and (max-width: 991px) {
     &.w-991{

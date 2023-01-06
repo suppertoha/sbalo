@@ -87,43 +87,43 @@
                       <div class="input-map__address delivery-address">
 
                         <div class="form-item delivery-address__field delivery-address__field--address"> 
-                          <input class="inputMain" type="name" name="address" required>
+                          <input class="inputMain" type="name" name="address" placeholder=" ">
                           <label class="form-label">Адрес доставки</label>
                           <small class="delivery-address__error-msg"></small>
                         </div>
                         
                         <div class="form-item delivery-address__field delivery-address__field--apartment"> 
-                          <input class="inputMain" type="name" name="apartment" required>
+                          <input class="inputMain" type="name" name="apartment" placeholder=" ">
                           <label class="form-label">Квартира/офис</label>
                           <small class="delivery-address__error-msg"></small>
                         </div>
 
                         <div class="form-item delivery-address__field delivery-address__field--index"> 
-                          <input class="inputMain" type="name" name="index" required>
+                          <input class="inputMain" type="name" name="index" placeholder=" ">
                           <label class="form-label">Индекс</label>
                           <small class="delivery-address__error-msg"></small>
                         </div>
                   
                         <div class="form-item delivery-address__field delivery-address__field--entrance"> 
-                          <input class="inputMain" type="name" name="entrance" required>
+                          <input class="inputMain" type="name" name="entrance" placeholder=" ">
                           <label class="form-label">Подъезд</label>
                           <small class="delivery-address__error-msg"></small>
                         </div>
 
                         <div class="form-item delivery-address__field delivery-address__field--floor"> 
-                          <input class="inputMain" type="floor" name="entrance" required>
+                          <input class="inputMain" type="floor" name="entrance" placeholder=" ">
                           <label class="form-label">Этаж</label>
                           <small class="delivery-address__error-msg"></small>
                         </div>
 
                         <div class="form-item delivery-address__field delivery-address__field--intercom"> 
-                          <input class="inputMain" type="intercom" name="entrance" required>
+                          <input class="inputMain" type="intercom" name="entrance" placeholder=" ">
                           <label class="form-label">Домофон</label>
                           <small class="delivery-address__error-msg"></small>
                         </div>
                         
                         <div class="form-item delivery-address__field delivery-address__field--comment"> 
-                          <textarea class="inputMain " type="text" name="comment" required></textarea>
+                          <textarea class="inputMain " type="text" name="comment" placeholder=" "></textarea>
                           <label class="form-label textareaMain">Комментарий курьеру</label>
                           <small class="delivery-address__error-msg"></small>
                         </div>
@@ -136,13 +136,13 @@
                       </div>
                       <div class="input-map__address delivery-address">
                         <div class="form-item delivery-address__field delivery-address__field--name"> 
-                          <input class="inputMain" type="text" name="name" required>
+                          <input class="inputMain" type="text" name="name" placeholder=" ">
                           <label class="form-label">Имя и фамилия*</label>
                           <small class="delivery-address__error-msg"></small>
                         </div>
 
                         <div class="form-item delivery-address__field delivery-address__field--tel"> 
-                          <input class="inputMain" type="text" name="tel" required>
+                          <input class="inputMain" type="text" name="tel" placeholder=" ">
                           <label class="form-label">Телефон*</label>
                           <small class="delivery-address__error-msg"></small>
                         </div>
@@ -164,6 +164,8 @@
       <!--End Delivery -->
 
     </div>
+		
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
 
     <script>
       ymaps.ready(function () {
@@ -221,8 +223,6 @@
             .add(myPlacemarkWithContent);
       });
     </script>
-		
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
     <script src="./libs/jquery/jquery-3.2.1.min.js"></script>
     <script src="./libs/fancybox/jquery.fancybox.min.js"></script>
     <script src="./libs/swiper/swiper.min.js"></script>
