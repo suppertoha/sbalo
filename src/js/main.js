@@ -95,34 +95,36 @@ $(document).ready(function () {
       }
   });
 
-  if (document.documentElement.clientWidth > 991) {
-    const sliderRecommended = new Swiper('.slider-recommended__container', {
-      slidesPerView: 'auto',
-      spaceBetween: 1,
-      loop: true,
-      navigation: {
-        nextEl: '.slider-recommended__next.swiper-button-next',
-        prevEl: '.slider-recommended__prev.swiper-button-prev',
-      },
+  function sld() {
+    if (document.documentElement.clientWidth > 991) {
+      const sliderRecommended = new Swiper('.slider-recommended__container', {
+        slidesPerView: 'auto',
+        spaceBetween: 1,
+        loop: true,
+        navigation: {
+          nextEl: '.slider-recommended__next.swiper-button-next',
+          prevEl: '.slider-recommended__prev.swiper-button-prev',
+        },
+    
+        breakpoints: {
+          991: {
+            slidesPerView: 3,
+          },
+          1200: {
+            slidesPerView: 4,
+          },
+          1400: {
+            slidesPerView: 5,
+          },
+        },
+      })
+    }
   
-      breakpoints: {
-        991: {
-          slidesPerView: 3,
-        },
-        1200: {
-          slidesPerView: 4,
-        },
-        1400: {
-          slidesPerView: 5,
-        },
-      },
-    })
-  }
+}
 
+  sld();
 
-
-sld();
-$(window).resize(sld);
+//$(window).resize(sld);
 
   const inp=document.getElementsByTagName('input');
     for(let i=0;i<inp.length;i++){

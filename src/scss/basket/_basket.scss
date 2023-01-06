@@ -527,6 +527,10 @@
   }
   &__item{
     background-color: #fff;
+
+    @media screen and (max-width: 991px) {
+      width: auto !important;
+    }
   }
 
   &__items{
@@ -534,6 +538,7 @@
       display: grid;
       grid-gap: 1px;
       grid-template-columns: repeat(2, 1fr);
+      transform: none !important;
     }
   }
 
