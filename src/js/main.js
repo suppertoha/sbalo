@@ -23,6 +23,22 @@ $(document).ready(function () {
   }
   buttonDelivery()
 
+  //! InputMain
+  function inputMain() {
+    $('.inputMain').on('click', function (e) {
+      $('.inputMain').removeClass('active');
+      $(this).toggleClass('active');
+    });
+  
+    $(document).on('click', function (e) {
+      if (!$(e.target).closest('.inputMain').length) {
+        $('.inputMain').removeClass('active');
+      }
+      e.stopPropagation();
+    });
+  }
+  inputMain()
+
   //! Checkbox
   function checkbox() {
     $.each($('.checkbox'), function (index, val) {
@@ -84,20 +100,9 @@ $(document).ready(function () {
   
     $('.select__item').on('click', function () {
       $(this).siblings().removeClass("active");
-      //$(".select__item").removeClass("active");
-  
     })
   }
-
   selectMain()
-
-
-  $(document).click(function (e) {
-      if (!$(e.target).closest(".select").length) {
-          $(".select__head").removeClass("open");
-          $(".select__list").fadeOut();
-      }
-  });
 
   function sld() {
   let widthSlide = $('body').width();
@@ -125,11 +130,12 @@ $(document).ready(function () {
     })
   }
 }
-  sld();
 
-  $(window).resize(function () {
-    scrollSwiper.update();
-  }); 
+sld();
+
+$(window).resize(function () {
+  scrollSwiper.update();
+}); 
 
 //$(window).resize(sld);
 
