@@ -23,22 +23,6 @@ $(document).ready(function () {
   }
   buttonDelivery()
 
-  //! InputMain
-  function inputMain() {
-    $('.inputMain').on('click', function (e) {
-      $('.inputMain').removeClass('active');
-      $(this).toggleClass('active');
-    });
-  
-    $(document).on('click', function (e) {
-      if (!$(e.target).closest('.inputMain').length) {
-        $('.inputMain').removeClass('active');
-      }
-      e.stopPropagation();
-    });
-  }
-  inputMain()
-
   //! Checkbox
   function checkbox() {
     $.each($('.checkbox'), function (index, val) {
@@ -133,9 +117,9 @@ $(document).ready(function () {
 
 sld();
 
-$(window).resize(function () {
-  scrollSwiper.update();
-}); 
+//$(window).resize(function () {
+//  scrollSwiper.update();
+//}); 
 
 //$(window).resize(sld);
 
@@ -143,6 +127,22 @@ $(window).resize(function () {
     for(let i=0;i<inp.length;i++){
     inp[i].setAttribute('autocomplete','off');
   }
+
+
+  function init() {
+    
+
+    const map = new ymaps.Map('map', {
+      center: [55.762722904919094,37.61899297265617],
+      zoom: 10,
+      iconImageHref: 'images/geo-map.svg',
+    });
+
+    if (!map) return;
+
+  }
+  //ymaps.ready(init);
+
 
 });
 

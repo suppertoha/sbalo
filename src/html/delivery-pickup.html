@@ -134,7 +134,7 @@
                   </div>
                 </form>
                 <div class="map-delivery__map">
-                  <div id="map"></div>
+                  <div id="map" class="map"></div>
                 </div>
               </div>
             </div>
@@ -144,12 +144,14 @@
 
     </div>
 	
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<cd659648-e743-4580-9fbe-f3c5d5602eeb>" type="text/javascript"></script>
+    <!--<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>-->
 
     <script>
       ymaps.ready(function () {
         var myMap = new ymaps.Map('map', {
-                center: [55.751574, 37.573856],
+                //center: [55.751574, 37.573856],
+                center: [55.762722904919094,37.61899297265617],
                 zoom: 9
             }, {
                 searchControlProvider: 'yandex#search'
@@ -173,7 +175,7 @@
                 iconImageSize: [30, 30],
                 // Смещение левого верхнего угла иконки относительно
                 // её "ножки" (точки привязки).
-                iconImageOffset: [-5, -38]
+                iconImageOffset: [-15, -9]
             }),
 
             myPlacemarkWithContent = new ymaps.Placemark([55.661574, 37.573856], {

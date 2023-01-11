@@ -23,7 +23,8 @@
                 <div class="header-map__inner">
                   <div class="header-map__button--container">
                     <button class="header-map__button">
-                      <img src="images/next.svg" alt="next">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="8.285" height="14" viewBox="0 0 8.285 14"><path id="next" d="M12.716,0,7,5.716,1.284,0,0,1.284l7,7,7-7Z" transform="translate(8.285) rotate(90)"/>
+                      </svg>
                       <span>Назад</span>
                     </button>
 
@@ -107,7 +108,7 @@
                   </div>
                 </form>
                 <div class="map-delivery__map">
-                  <div id="map"></div>
+                  <div id="map" class="map"></div>
                 </div>
               </div>
             </div>
@@ -117,64 +118,66 @@
 
     </div>
 		
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<cd659648-e743-4580-9fbe-f3c5d5602eeb>" type="text/javascript"></script>
 
-    <script>
-      ymaps.ready(function () {
-        var myMap = new ymaps.Map('map', {
-                center: [55.751574, 37.573856],
-                zoom: 9
-            }, {
-                searchControlProvider: 'yandex#search'
-            }),
+      <script>
+        ymaps.ready(function () {
+          var myMap = new ymaps.Map('map', {
+                  //center: [55.751574, 37.573856],
+                  center: [55.762722904919094,37.61899297265617],
+                  zoom: 9
+              }, {
+                  searchControlProvider: 'yandex#search'
+              }),
+  
+              // Создаём макет содержимого.
+              MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+                  '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+              ),
+  
+              myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                  hintContent: 'Собственный значок метки',
+                  balloonContent: 'Это красивая метка'
+              }, {
+                  // Опции.
+                  // Необходимо указать данный тип макета.
+                  iconLayout: 'default#image',
+                  // Своё изображение иконки метки.
+                  iconImageHref: 'images/geo-map.svg',
+                  // Размеры метки.
+                  iconImageSize: [30, 30],
+                  // Смещение левого верхнего угла иконки относительно
+                  // её "ножки" (точки привязки).
+                  iconImageOffset: [-15, -9]
+              }),
+  
+              myPlacemarkWithContent = new ymaps.Placemark([55.661574, 37.573856], {
+                  hintContent: 'Собственный значок метки с контентом',
+                  balloonContent: 'А эта — новогодняя',
+                  iconContent: '12'
+              }, {
+                  // Опции.
+                  // Необходимо указать данный тип макета.
+                  iconLayout: 'default#imageWithContent',
+                  // Своё изображение иконки метки.
+                  iconImageHref: 'images/ball.png',
+                  // Размеры метки.
+                  iconImageSize: [48, 48],
+                  // Смещение левого верхнего угла иконки относительно
+                  // её "ножки" (точки привязки).
+                  iconImageOffset: [-24, -24],
+                  // Смещение слоя с содержимым относительно слоя с картинкой.
+                  iconContentOffset: [15, 15],
+                  // Макет содержимого.
+                  iconContentLayout: MyIconContentLayout
+              });
+  
+          myMap.geoObjects
+              .add(myPlacemark)
+              .add(myPlacemarkWithContent);
+        });
+      </script>
 
-            // Создаём макет содержимого.
-            MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-                '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-            ),
-
-            myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-                hintContent: 'Собственный значок метки',
-                balloonContent: 'Это красивая метка'
-            }, {
-                // Опции.
-                // Необходимо указать данный тип макета.
-                iconLayout: 'default#image',
-                // Своё изображение иконки метки.
-                iconImageHref: 'images/geo-map.svg',
-                // Размеры метки.
-                iconImageSize: [30, 30],
-                // Смещение левого верхнего угла иконки относительно
-                // её "ножки" (точки привязки).
-                iconImageOffset: [-5, -38]
-            }),
-
-            myPlacemarkWithContent = new ymaps.Placemark([55.661574, 37.573856], {
-                hintContent: 'Собственный значок метки с контентом',
-                balloonContent: 'А эта — новогодняя',
-                iconContent: '12'
-            }, {
-                // Опции.
-                // Необходимо указать данный тип макета.
-                iconLayout: 'default#imageWithContent',
-                // Своё изображение иконки метки.
-                iconImageHref: 'images/ball.png',
-                // Размеры метки.
-                iconImageSize: [48, 48],
-                // Смещение левого верхнего угла иконки относительно
-                // её "ножки" (точки привязки).
-                iconImageOffset: [-24, -24],
-                // Смещение слоя с содержимым относительно слоя с картинкой.
-                iconContentOffset: [15, 15],
-                // Макет содержимого.
-                iconContentLayout: MyIconContentLayout
-            });
-
-        myMap.geoObjects
-            .add(myPlacemark)
-            .add(myPlacemarkWithContent);
-      });
-    </script>
     <script src="./libs/jquery/jquery-3.2.1.min.js"></script>
     <script src="./libs/fancybox/jquery.fancybox.min.js"></script>
     <script src="./libs/swiper/swiper.min.js"></script>

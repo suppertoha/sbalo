@@ -7,11 +7,13 @@
   font-size: 16px;
   height: 60px;
 
-  &:hover{
-    border: 1px solid  #005BFF;
+  @media screen and (min-width: 1024px) {
+    &:hover{
+      border: 1px solid  #005BFF;
+    }
   }
 
-  &.active{
+  &:focus{
     border: 1px solid  #005BFF;
   }
 
@@ -375,17 +377,35 @@
 .btn-blue {
   background: #005BFF ;
   color: #FFFFFF;
+  
+  @media screen and (min-width: 1024px) {
+    &:hover{
+      background: #0050E0;
+    }
+  }
 
-  &:hover{
-    background: #0050E0;
+  @media screen and (max-width: 1024px) {
+    &:active{
+      background: #0050E0;
+    }
   }
 }
 
 .btn-light-blue{
   color: #000000;
   background: #F2F5FA;
-  &:hover{
-    background: #CFD0D2;
+
+
+  @media screen and (min-width: 1024px) {
+    &:hover{
+      background: #CFD0D2;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    &:active{
+      background: #CFD0D2;
+    }
   }
 }
 
@@ -408,8 +428,16 @@
   background: #10C44C  ;
   color: #FFFFFF;
 
-  &:hover{
-    background: #0EAD43;
+  @media screen and (min-width: 1024px) {
+    &:hover{
+      background: #0EAD43;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    &:active{
+      background: #0EAD43;
+    }
   }
 }
 
@@ -433,8 +461,16 @@
   cursor: pointer;
   align-self: flex-start;
   
-  &:hover{
-    border-bottom: 1px solid transparent;
+  @media screen and (min-width: 1024px) {
+    &:hover{
+      border-bottom: 1px solid transparent;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    &:active{
+      border-bottom: 1px solid transparent;
+    }
   }
 
   background: transparent;
@@ -503,14 +539,6 @@
 
   &.active{
     position: relative;
-    &:before{
-      background-color: #005BFF;
-      border: 2px solid transparent;
-    }
-  }
-
-  &.active{
-    position: relative;
     &:after{
       background-color: #ffffff;
       left: 27px;
@@ -538,7 +566,11 @@
     visibility: hidden;
 
     @media screen and (max-width: 767px) {
-      left: -236px;
+      left: -220px;
+    }
+
+    @media screen and (max-width: 340px) {
+      width: 290px;
     }
   }
 
@@ -570,17 +602,34 @@
     transition: 300ms;
     cursor: pointer;
 
-    &:hover{
-      background: #8B99A1 ;
-      border: 1px solid #8B99A1;
-
-      color: #ffffff;
-
-      ~.hint__content{
-        opacity: 1;
-        visibility: visible;
+    @media screen and (min-width: 1024px) {
+      &:hover{
+        background: #8B99A1 ;
+        border: 1px solid #8B99A1;
+  
+        color: #ffffff;
+  
+        ~.hint__content{
+          opacity: 1;
+          visibility: visible;
+        }
       }
     }
+
+    @media screen and (max-width: 1024px) {
+      &:active{
+        background: #8B99A1 ;
+        border: 1px solid #8B99A1;
+  
+        color: #ffffff;
+  
+        ~.hint__content{
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+
 
   }
 }
@@ -1063,6 +1112,9 @@
     }
   }
 }
+
+
+
 
 
 
