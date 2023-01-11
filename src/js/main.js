@@ -129,19 +129,36 @@ sld();
   }
 
 
-  function init() {
+  //function init() {
     
 
-    const map = new ymaps.Map('map', {
-      center: [55.762722904919094,37.61899297265617],
-      zoom: 10,
-      iconImageHref: 'images/geo-map.svg',
-    });
+  //  const map = new ymaps.Map('map', {
+  //    center: [55.762722904919094,37.61899297265617],
+  //    zoom: 10,
+  //    iconImageHref: 'images/geo-map.svg',
+  //  });
 
-    if (!map) return;
+  //  if (!map) return;
 
-  }
+  //}
   //ymaps.ready(init);
+
+  //! Promo-dropdown
+  $(".promo__header").on("click", function () {
+    $(this).toggleClass("active");
+    $(this).next().slideToggle();
+  });
+
+    //! SwitchEl
+    let switchEl = document.querySelectorAll('.switch-el');
+    if (switchEl) {
+      switchEl.forEach(function (el) {
+        el.addEventListener('click', function () {
+          $(this).siblings().removeClass("active");
+          $(this).toggleClass('active');
+        });
+      });
+    }
 
 
 });

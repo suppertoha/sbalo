@@ -45,14 +45,12 @@
     }
   }
 
-  &__form {
-  }
-
   &__map {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
   }
 }
 
@@ -476,10 +474,6 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 10px;
-
-  .inputMain{
-    padding: 16px 20px;
-  }
 
   &__field--comment{
     min-height: 100px;

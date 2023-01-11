@@ -23,7 +23,8 @@
                 <div class="header-map__inner">
                   <div class="header-map__button--container">
                     <button class="header-map__button">
-                      <img src="images/next.svg" alt="next">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="8.285" height="14" viewBox="0 0 8.285 14"><path id="next" d="M12.716,0,7,5.716,1.284,0,0,1.284l7,7,7-7Z" transform="translate(8.285) rotate(90)"/>
+                      </svg>
                       <span>Назад</span>
                     </button>
 
@@ -69,9 +70,7 @@
 
                     <div class="form-map__subtitle">Куда доставить заказ?</div>
                     <div class="form-map__text grey" data-text="Выберите пункт выдачи на карте"><span>Выберите адрес доставки на карте</span></div>
-                    <button class="form-map__button-delivery js-button--delivery" data-btn="Мое местоположение">
-                      <span>Адрес доставки</span>
-                    </button>
+                    <button class="form-map__save btnMain btn-blue btn-modifier js-button--delivery mobi active">Мое местоположение</button>
                     <button class="form-map__location btn-hover" >Определить местоположение</button>
                   </div>
 
@@ -149,8 +148,8 @@
 
                       </div>
                     </div>
-
-                    <button class="form-map__save btnMain btn-green btn-modifier">Сохранить и продолжить</button>
+              
+                    <button class="form-map__save btnMain btn-green btn-modifier js-button--delivery">Сохранить и продолжить</button>
                   </div>
                 </form>
                 <div class="map-delivery__map">
@@ -170,7 +169,8 @@
     <script>
       ymaps.ready(function () {
         var myMap = new ymaps.Map('map', {
-                center: [55.751574, 37.573856],
+                //center: [55.751574, 37.573856],
+                center: [55.762722904919094,37.61899297265617],
                 zoom: 9
             }, {
                 searchControlProvider: 'yandex#search'
@@ -194,7 +194,7 @@
                 iconImageSize: [30, 30],
                 // Смещение левого верхнего угла иконки относительно
                 // её "ножки" (точки привязки).
-                iconImageOffset: [-5, -38]
+                iconImageOffset: [-15, -9]
             }),
 
             myPlacemarkWithContent = new ymaps.Placemark([55.661574, 37.573856], {
