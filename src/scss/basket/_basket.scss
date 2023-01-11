@@ -534,6 +534,12 @@
     }
   }
 
+  &.w-1400{
+    @media screen and (max-width: 600px) {
+      padding: 0 10px 80px;
+    }
+  }
+
   &__inner {
   }
 
