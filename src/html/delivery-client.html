@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./libs/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./libs/swiper/swiper.css" />
+    <link rel="stylesheet" href="css/main.css">
+		<title>Delivery</title>
+
+	</head>
+
+	<body>
+    <div class="wrapper">
+      <!-- Delivery -->
+        <div class="map-delivery">
+          <div class="map-delivery__container">
+            <div class="map-delivery__inner">
+              <div class="map-delivery__header header-map">
+                <div class="header-map__inner">
+                  <div class="header-map__button--container">
+                    <button class="header-map__button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="8.285" height="14" viewBox="0 0 8.285 14"><path id="next" d="M12.716,0,7,5.716,1.284,0,0,1.284l7,7,7-7Z" transform="translate(8.285) rotate(90)"/>
+                      </svg>
+                      <span>Назад</span>
+                    </button>
+
+                    <div class="header-map__buttons--mobile buttons-order">
+                      <button class="buttons-order__button btnMain switch-el ">
+                        Самовывоз
+                      </button>
+                      <button class="buttons-order__button btnMain switch-el active">
+                        Курьером
+                      </button>
+                    </div>
+
+                  </div>
+                  <div class="header-map__items">
+                    <div class="header-map__content">
+                      <div class="header-map__name">Доставка товаров</div>
+                      <div class="header-map__goods">1 товар - 2,5 кг</div>
+                    </div>
+                    <ul class="header-map__product">
+                      <li>
+                        <img src="images/brand-img1.jpg" alt="brand" />
+                      </li>
+                      <li>
+                        <img src="images/brand-img2.jpg" alt="brand" />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="map-delivery__body">
+                <form action="#" class="map-delivery__form form-map">
+                  <div class="form-map__inner">
+                    <div class="form-map__body">
+                      <h2 class="form-map__title">Адрес доставки</h2>
+                
+                      <div class="form-map__text">Ближайшая доставка в среду, 9 декабря с 17:00, от 500 RUB</div>
+                      <div class="form-map__input input-map">
+                        <div class="input-map__address delivery-address">
+  
+                          <div class="form-item delivery-address__field delivery-address__field--address"> 
+                            <input class="inputMain" type="name" name="address" placeholder=" ">
+                            <label class="form-label">Адрес доставки</label>
+                            <small class="delivery-address__error-msg"></small>
+                          </div>
+                          
+                          <div class="form-item delivery-address__field delivery-address__field--apartment"> 
+                            <input class="inputMain" type="name" name="apartment" placeholder=" ">
+                            <label class="form-label">Квартира/офис</label>
+                            <small class="delivery-address__error-msg"></small>
+                          </div>
+  
+                          <div class="form-item delivery-address__field delivery-address__field--index"> 
+                            <input class="inputMain" type="name" name="index" placeholder=" ">
+                            <label class="form-label">Индекс</label>
+                            <small class="delivery-address__error-msg"></small>
+                          </div>
+                    
+                          <div class="form-item delivery-address__field delivery-address__field--entrance"> 
+                            <input class="inputMain" type="name" name="entrance" placeholder=" ">
+                            <label class="form-label">Подъезд</label>
+                            <small class="delivery-address__error-msg"></small>
+                          </div>
+  
+                          <div class="form-item delivery-address__field delivery-address__field--floor"> 
+                            <input class="inputMain" type="floor" name="entrance" placeholder=" ">
+                            <label class="form-label">Этаж</label>
+                            <small class="delivery-address__error-msg"></small>
+                          </div>
+  
+                          <div class="form-item delivery-address__field delivery-address__field--intercom"> 
+                            <input class="inputMain" type="intercom" name="entrance" placeholder=" ">
+                            <label class="form-label">Домофон</label>
+                            <small class="delivery-address__error-msg"></small>
+                          </div>
+                          
+                          <div class="form-item delivery-address__field delivery-address__field--comment"> 
+                            <textarea class="inputMain " type="text" name="comment" placeholder=" "></textarea>
+                            <label class="form-label textareaMain">Комментарий курьеру</label>
+                            <small class="delivery-address__error-msg"></small>
+                          </div>
+                        </div>
+                      </div>
+  
+                      <div class="form-map__bottom input-map">
+                        <div class="form-map__subtitle">
+                          Данные получателя
+                        </div>
+                        <div class="input-map__address delivery-address">
+                          <div class="form-item delivery-address__field delivery-address__field--name"> 
+                            <input class="inputMain" type="text" name="name" placeholder=" ">
+                            <label class="form-label">Имя и фамилия*</label>
+                            <small class="delivery-address__error-msg"></small>
+                          </div>
+  
+                          <div class="form-item delivery-address__field delivery-address__field--tel"> 
+                            <input class="inputMain" type="text" name="tel" placeholder=" ">
+                            <label class="form-label">Телефон*</label>
+                            <small class="delivery-address__error-msg"></small>
+                          </div>
+  
+                        </div>
+                      </div>
+                
+                      <button class="form-map__save btnMain btn-green btn-modifier">Сохранить и продолжить</button>
+                    </div>
+                  
+                  </div>
+
+                  <div class="form-map js-form--delivery">
+                    <h2 class="form-map__title">Адрес доставки</h2>
+                    <div class="close-button">
+                      <svg class="icon">
+                        <use xlink:href="./images/svg-sprite/svg-sprite.svg#close"></use>
+                      </svg>
+                    </div>
+                    <div class="form-map__text">Ближайшая доставка в среду, 9 декабря с 17:00, от 500 RUB</div>
+                    <div class="form-map__input input-map">
+                      <div class="input-map__address delivery-address">
+
+                        <div class="form-item delivery-address__field delivery-address__field--address"> 
+                          <input class="inputMain" type="name" name="address" placeholder=" ">
+                          <label class="form-label">Адрес доставки</label>
+                          <small class="delivery-address__error-msg"></small>
+                        </div>
+                        
+                        <div class="form-item delivery-address__field delivery-address__field--apartment"> 
+                          <input class="inputMain" type="name" name="apartment" placeholder=" ">
+                          <label class="form-label">Квартира/офис</label>
+                          <small class="delivery-address__error-msg"></small>
+                        </div>
+
+                        <div class="form-item delivery-address__field delivery-address__field--index"> 
+                          <input class="inputMain" type="name" name="index" placeholder=" ">
+                          <label class="form-label">Индекс</label>
+                          <small class="delivery-address__error-msg"></small>
+                        </div>
+                  
+                        <div class="form-item delivery-address__field delivery-address__field--entrance"> 
+                          <input class="inputMain" type="name" name="entrance" placeholder=" ">
+                          <label class="form-label">Подъезд</label>
+                          <small class="delivery-address__error-msg"></small>
+                        </div>
+
+                        <div class="form-item delivery-address__field delivery-address__field--floor"> 
+                          <input class="inputMain" type="floor" name="entrance" placeholder=" ">
+                          <label class="form-label">Этаж</label>
+                          <small class="delivery-address__error-msg"></small>
+                        </div>
+
+                        <div class="form-item delivery-address__field delivery-address__field--intercom"> 
+                          <input class="inputMain" type="intercom" name="entrance" placeholder=" ">
+                          <label class="form-label">Домофон</label>
+                          <small class="delivery-address__error-msg"></small>
+                        </div>
+                        
+                        <div class="form-item delivery-address__field delivery-address__field--comment"> 
+                          <textarea class="inputMain " type="text" name="comment" placeholder=" "></textarea>
+                          <label class="form-label textareaMain">Комментарий курьеру</label>
+                          <small class="delivery-address__error-msg"></small>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-map__bottom input-map">
+                      <div class="form-map__subtitle">
+                        Данные получателя
+                      </div>
+                      <div class="input-map__address delivery-address">
+                        <div class="form-item delivery-address__field delivery-address__field--name"> 
+                          <input class="inputMain" type="text" name="name" placeholder=" ">
+                          <label class="form-label">Имя и фамилия*</label>
+                          <small class="delivery-address__error-msg"></small>
+                        </div>
+
+                        <div class="form-item delivery-address__field delivery-address__field--tel"> 
+                          <input class="inputMain" type="text" name="tel" placeholder=" ">
+                          <label class="form-label">Телефон*</label>
+                          <small class="delivery-address__error-msg"></small>
+                        </div>
+
+                      </div>
+                    </div>
+              
+                    <button class="form-map__save btnMain btn-green btn-modifier js-button--delivery">Сохранить и продолжить</button>
+                  </div>
+                </form>
+                <div class="map-delivery__map">
+                  <div id="map"></div>
+              
+                </div>
+              </div>
+
+              <div class="map-delivery-inner mobi">
+                <div class="form-map__subtitle">Куда доставить заказ?</div>
+                <div class="form-map__text grey" data-text="Выберите пункт выдачи на карте"><span>Выберите адрес доставки на карте</span></div>
+            
+                <button class="form-map__save btnMain btn-blue btn-modifier js-button--delivery active">Мое местоположение</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!--End Delivery -->
+
+    </div>
+		
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+
+    <script>
+      ymaps.ready(function () {
+        var myMap = new ymaps.Map('map', {
+                //center: [55.751574, 37.573856],
+                center: [55.762722904919094,37.61899297265617],
+                zoom: 9
+            }, {
+                searchControlProvider: 'yandex#search'
+            }),
+
+            // Создаём макет содержимого.
+            MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+                '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+            ),
+
+            myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                hintContent: 'Собственный значок метки',
+                balloonContent: 'Это красивая метка'
+            }, {
+                // Опции.
+                // Необходимо указать данный тип макета.
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                iconImageHref: 'images/geo-map.svg',
+                // Размеры метки.
+                iconImageSize: [30, 30],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-15, -9]
+            }),
+
+            myPlacemarkWithContent = new ymaps.Placemark([55.661574, 37.573856], {
+                hintContent: 'Собственный значок метки с контентом',
+                balloonContent: 'А эта — новогодняя',
+                iconContent: '12'
+            }, {
+                // Опции.
+                // Необходимо указать данный тип макета.
+                iconLayout: 'default#imageWithContent',
+                // Своё изображение иконки метки.
+                iconImageHref: 'images/ball.png',
+                // Размеры метки.
+                iconImageSize: [48, 48],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-24, -24],
+                // Смещение слоя с содержимым относительно слоя с картинкой.
+                iconContentOffset: [15, 15],
+                // Макет содержимого.
+                iconContentLayout: MyIconContentLayout
+            });
+
+        myMap.geoObjects
+            .add(myPlacemark)
+            .add(myPlacemarkWithContent);
+      });
+    </script>
+    <script src="./libs/jquery/jquery-3.2.1.min.js"></script>
+    <script src="./libs/fancybox/jquery.fancybox.min.js"></script>
+    <script src="./libs/swiper/swiper.min.js"></script>
+    <script src="js/main.js"></script>
+	</body>
+</html>
