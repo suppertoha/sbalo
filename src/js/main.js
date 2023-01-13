@@ -153,9 +153,11 @@ sld();
     let switchEl = document.querySelectorAll('.switch-el');
     if (switchEl) {
       switchEl.forEach(function (el) {
-        el.addEventListener('click', function () {
+        el.addEventListener('click', function (e) {
+          e.preventDefault();
           $(this).siblings().removeClass("active");
-          $(this).toggleClass('active');
+          $(this).addClass('active');
+          e.stopPropagation();
         });
       });
     }

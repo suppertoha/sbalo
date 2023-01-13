@@ -29,10 +29,10 @@
                     </button>
 
                     <div class="header-map__buttons--mobile buttons-order">
-                      <button class="buttons-order__button btnMain btn-light-blue active">
+                      <button class="buttons-order__button btnMain switch-el active">
                         Самовывоз
                       </button>
-                      <button class="buttons-order__button btnMain btn-light-blue">
+                      <button class="buttons-order__button btnMain switch-el">
                         Курьером
                       </button>
                     </div>
@@ -60,16 +60,23 @@
                   <div class="form-map__inner">
                     <h2 class="form-map__title hidden">Способ доставки</h2>
                     <div class="form-map__buttons buttons-order hidden">
-                      <button class="buttons-order__button btnMain btn-light-blue active">
+                      <button class="buttons-order__button btnMain switch-el active">
                         Самовывоз
                       </button>
-                      <button class="buttons-order__button btnMain btn-light-blue">
+                      <button class="buttons-order__button btnMain switch-el">
                         Курьером
                       </button>
                     </div>
 
                     <div class="form-map__subtitle">Куда доставить заказ?</div>
                     <div class="form-map__text grey" data-text="Выберите пункт выдачи на карте"><span>Выберите адрес доставки на карте</span></div>
+                    <div class="input-map__address delivery-address none767 mb-20">
+                      <div class="form-item delivery-address__field delivery-address__field--address"> 
+                        <input class="inputMain form-input" type="name" name="address" placeholder=" ">
+                        <label class="form-label">Адрес доставки</label>
+                        <small class="delivery-address__error-msg"></small>
+                      </div>
+                    </div>
                     <button class="form-map__save btnMain btn-blue btn-modifier js-button--delivery mobi active">Мое местоположение</button>
                     <button class="form-map__location btn-hover" >Определить местоположение</button>
                   </div>

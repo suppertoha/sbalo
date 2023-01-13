@@ -442,7 +442,15 @@
   display: flex;
 
   &__button {
+    color: #000000;
+    background: #F2F5FA;
     height: 50px;
+    @media screen and (min-width: 1024px) {
+      &:hover{
+        background: #CFD0D2;
+      }
+    }
+
     &.active{
       background:#000000;
       color: #ffffff;
