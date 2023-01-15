@@ -408,11 +408,11 @@
 }
 
 .media-big{
-  @media screen and (max-width: 1400px) {
+  @media screen and (max-width: 1366px) {
     flex-direction: column;
     width: 100%;
     max-width: 100%;
-    &.w-1400{
+    &.w-1366{
       padding-bottom: 40px;
     }
   }
@@ -532,13 +532,13 @@
     padding: 0px;
   }
 
-  @media screen and (max-width: 1530px) {
-    &.w-1400{
+  @media screen and (max-width: 1366px) {
+    &.w-1366{
       padding-bottom: 80px;
     }
   }
 
-  &.w-1400{
+  &.w-1366{
     @media screen and (max-width: 600px) {
       padding: 0 10px 80px;
     }

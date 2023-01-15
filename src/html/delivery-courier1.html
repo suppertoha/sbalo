@@ -29,7 +29,7 @@
                     </button>
 
                     <div class="header-map__buttons--mobile buttons-order">
-                      <button class="buttons-order__button btnMain switch-el ">
+                      <button class="buttons-order__button btnMain switch-el">
                         Самовывоз
                       </button>
                       <button class="buttons-order__button btnMain switch-el active">
@@ -58,80 +58,27 @@
               <div class="map-delivery__body">
                 <form action="#" class="map-delivery__form form-map">
                   <div class="form-map__inner">
-                    <div class="form-map__body">
-                      <h2 class="form-map__title">Адрес доставки</h2>
-                
-                      <div class="form-map__text">Ближайшая доставка в среду, 9 декабря с 17:00, от 500 RUB</div>
-                      <div class="form-map__input input-map">
-                        <div class="input-map__address delivery-address">
-  
-                          <div class="form-item delivery-address__field delivery-address__field--address"> 
-                            <input class="inputMain" type="name" name="address" placeholder=" ">
-                            <label class="form-label">Адрес доставки</label>
-                            <small class="delivery-address__error-msg"></small>
-                          </div>
-                          
-                          <div class="form-item delivery-address__field delivery-address__field--apartment"> 
-                            <input class="inputMain" type="name" name="apartment" placeholder=" ">
-                            <label class="form-label">Квартира/офис</label>
-                            <small class="delivery-address__error-msg"></small>
-                          </div>
-  
-                          <div class="form-item delivery-address__field delivery-address__field--index"> 
-                            <input class="inputMain" type="name" name="index" placeholder=" ">
-                            <label class="form-label">Индекс</label>
-                            <small class="delivery-address__error-msg"></small>
-                          </div>
-                    
-                          <div class="form-item delivery-address__field delivery-address__field--entrance"> 
-                            <input class="inputMain" type="name" name="entrance" placeholder=" ">
-                            <label class="form-label">Подъезд</label>
-                            <small class="delivery-address__error-msg"></small>
-                          </div>
-  
-                          <div class="form-item delivery-address__field delivery-address__field--floor"> 
-                            <input class="inputMain" type="floor" name="entrance" placeholder=" ">
-                            <label class="form-label">Этаж</label>
-                            <small class="delivery-address__error-msg"></small>
-                          </div>
-  
-                          <div class="form-item delivery-address__field delivery-address__field--intercom"> 
-                            <input class="inputMain" type="intercom" name="entrance" placeholder=" ">
-                            <label class="form-label">Домофон</label>
-                            <small class="delivery-address__error-msg"></small>
-                          </div>
-                          
-                          <div class="form-item delivery-address__field delivery-address__field--comment"> 
-                            <textarea class="inputMain " type="text" name="comment" placeholder=" "></textarea>
-                            <label class="form-label textareaMain">Комментарий курьеру</label>
-                            <small class="delivery-address__error-msg"></small>
-                          </div>
-                        </div>
-                      </div>
-  
-                      <div class="form-map__bottom input-map">
-                        <div class="form-map__subtitle">
-                          Данные получателя
-                        </div>
-                        <div class="input-map__address delivery-address">
-                          <div class="form-item delivery-address__field delivery-address__field--name"> 
-                            <input class="inputMain" type="text" name="name" placeholder=" ">
-                            <label class="form-label">Имя и фамилия*</label>
-                            <small class="delivery-address__error-msg"></small>
-                          </div>
-  
-                          <div class="form-item delivery-address__field delivery-address__field--tel"> 
-                            <input class="inputMain" type="text" name="tel" placeholder=" ">
-                            <label class="form-label">Телефон*</label>
-                            <small class="delivery-address__error-msg"></small>
-                          </div>
-  
-                        </div>
-                      </div>
-                
-                      <button class="form-map__save btnMain btn-green btn-modifier">Сохранить и продолжить</button>
+                    <h2 class="form-map__title hidden">Способ доставки</h2>
+                    <div class="form-map__buttons buttons-order hidden">
+                      <button class="buttons-order__button btnMain switch-el ">
+                        Самовывоз
+                      </button>
+                      <button class="buttons-order__button btnMain switch-el active">
+                        Курьером
+                      </button>
                     </div>
-                  
+
+                    <div class="form-map__subtitle">Куда доставить заказ?</div>
+                    <div class="form-map__text grey" data-text="Выберите пункт выдачи на карте"><span>Выберите адрес доставки на карте</span></div>
+                    <div class="input-map__address delivery-address none767 mb-20">
+                      <div class="form-item delivery-address__field delivery-address__field--address"> 
+                        <input class="inputMain form-input" type="name" name="address" placeholder=" ">
+                        <label class="form-label">Адрес доставки</label>
+                        <small class="delivery-address__error-msg"></small>
+                      </div>
+                    </div>
+                    <button class="form-map__save btnMain btn-blue btn-modifier js-button--delivery mobi active">Мое местоположение</button>
+                    <button class="form-map__location btn-hover" >Определить местоположение</button>
                   </div>
 
                   <div class="form-map js-form--delivery">
@@ -216,13 +163,6 @@
                   <div id="map"></div>
               
                 </div>
-              </div>
-
-              <div class="map-delivery-inner mobi">
-                <div class="form-map__subtitle">Куда доставить заказ?</div>
-                <div class="form-map__text grey" data-text="Выберите пункт выдачи на карте"><span>Выберите адрес доставки на карте</span></div>
-            
-                <button class="form-map__save btnMain btn-blue btn-modifier js-button--delivery active">Мое местоположение</button>
               </div>
             </div>
           </div>

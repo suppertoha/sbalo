@@ -359,21 +359,9 @@
   opacity: 1;
   z-index: 200;
 
-  @media screen and (max-width: 1400px) {
-    .w-1400{
+  @media screen and (max-width: 1366px) {
+    &.w-1366{
       display: flex;
-    }
-  }
-
-  @media screen and (max-width: 991px) {
-    &.w-991{
-      display: block;
-    }
-  }
-
-  @media screen and (max-width: 1400px) {
-    &.w-1400{
-      display: block;
     }
   }
 

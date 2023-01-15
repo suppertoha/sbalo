@@ -1,5 +1,11 @@
 $(document).ready(function () {
 
+  if ($('[data-fancybox]').length) {
+    $('[data-fancybox]').fancybox({
+      touch: false,
+    });
+  }
+
   //! ButtonDelivery
   function buttonDelivery() {
     $('.js-button--delivery').on('click', function (e) {
@@ -150,17 +156,23 @@ sld();
   });
 
     //! SwitchEl
-    let switchEl = document.querySelectorAll('.switch-el');
-    if (switchEl) {
-      switchEl.forEach(function (el) {
-        el.addEventListener('click', function (e) {
-          e.preventDefault();
-          $(this).siblings().removeClass("active");
-          $(this).addClass('active');
-          e.stopPropagation();
-        });
-      });
-    }
+    //let switchEl = document.querySelectorAll('.switch-el');
+    //if (switchEl) {
+    //  switchEl.forEach(function (el) {
+    //    el.addEventListener('click', function (e) {
+    //      e.preventDefault();
+    //  
+    //      e.stopPropagation();
+    //    });
+    //  });
+    //}
+  $(document).on('click', function (e) {
+    console.log(e.target);
+  });
+  $('.switch-el').on("click", function () {
+    $(this).siblings().removeClass("active");
+    $(this).addClass('active');
+  });
 
 
 });
