@@ -493,9 +493,15 @@
   &__field--comment{
     min-height: 100px;
 
-    textarea{
+    .inputMain{
       height: 100%;
       resize: none;
+    }
+
+    @media screen and (max-width: 991px){ 
+      .form-label {
+        top: 10px;
+      }
     }
   }
 
