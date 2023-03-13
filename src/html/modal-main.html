@@ -38,6 +38,12 @@
           delivery-pickup2
         </a> 
       </li>
+
+      <li class="modal-delivery-pickup1">
+        <a data-fancybox data-src="#authorization" href="javascript:;">
+          authorization
+        </a> 
+      </li>
     </ul>
 
     <div id="delivery-courier1" class="delivery">
@@ -653,6 +659,72 @@
   
       </div>
     </div>
+
+    
+      <!-- Authorization -->
+      <div id="authorization" class="authorization delivery">
+        <div class="authorization__container container">
+          <div class="authorization__header">
+            <div class="authorization__menu">
+              <a href="#" class="authorization__logo">
+                <img src="images/logo.png" alt="logo">
+              </a>
+  
+              <ul class="authorization__list">
+                <li class="authorization__link switch-el active">
+                  <a href="#">1 Авторизация</a>
+                </li>
+    
+                <li class="authorization__link switch-el">
+                  <a href="#">2 Доставка</a>
+                </li>
+    
+                <li class="authorization__link switch-el">
+                  <a href="#">3 Оплата</a>
+                </li>
+
+              </ul>
+  
+              <div class="authorization__button">
+                <svg class="icon">
+                  <use xlink:href="./images/svg-sprite/svg-sprite.svg#close"></use>
+                </svg>
+              </div>
+            </div>        
+          </div>
+          
+          <div class="authorization__main">
+            <form action="#" class="authorization__form form-autorization">
+              <div class="form-autorization__inner">
+                <h2 class="form-autorization__title">Sbalo ID</h2>
+                <div class="form-autorization__description">Войдите по почте</div>
+                <div class="form-autorization__info">
+                  Только для зарегистрированных пользователей
+                </div>
+                
+                <div class="form-item delivery-address__field delivery-address__field--mail"> 
+                  <input class="inputMain" type="tel" name="address" placeholder=" ">
+                  <label class="form-label">Электронная почта*</label>
+                  <small class="delivery-address__error-msg"></small>
+                </div>
+
+                <button class="form-autorization__button">
+                  <a href="#" class="btnMain btn-blue">
+                    Получить код
+                  </a>
+                </button>
+
+                <div class="form-autorization__mail">
+                  <a href="#">Вернуться на главный экран</a> 
+                </div>
+                
+              </div>
+            </form>
+          </div>
+        </div>
+      
+      </div>
+      <!--End Authorization -->
 
 
     <script src="./libs/jquery/jquery-3.2.1.min.js"></script>
