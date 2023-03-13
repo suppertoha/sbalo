@@ -1,6 +1,9 @@
-
 /*modal*/
-#delivery-courier1, #delivery-courier2, #delivery-pickup1, #delivery-pickup2{
+#delivery-courier1,
+#delivery-courier2,
+#delivery-pickup1,
+#delivery-pickup2,
+#authorization {
   display: none;
 }
 
@@ -8,12 +11,17 @@
   padding: 0px !important;
 }
 
-.delivery{
+.delivery {
   width: 100%;
   height: 100%;
   padding: 0;
 }
 
-.delivery .fancybox-button{
+.delivery .fancybox-button {
   display: none;
+}
+
+#authorization {
+  position: relative;
+  background: #f3f3f3;
 }
